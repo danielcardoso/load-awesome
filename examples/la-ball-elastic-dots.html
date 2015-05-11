@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Ball Elastic Dots » Load Awesome</title>
+    <meta name="description" content="An awesome collection of Loaders and Spinners. Delightful and performance-focused Pure CSS animations">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/loaders.css" />
+</head>
+<body style="background-color: #fec54f; color: #fec54f;">
+    <header class="absolute">
+        <div class="header-container">
+            <div class="left">
+                <h1>Ball Elastic Dots
+                    <span>Awesome</span>
+                </h1>
+            </div>
+            <div class="right text-right">
+                <span class="btngroup">
+                    <a href="./" class="btn btn-circle">View All</a>
+                </span>
+            </div>
+            <div class="cf"></div>
+        </div>
+    </header>
+    <main>
+        <div class="loaders showroom">
+            <div class="loader">
+                <div class="la-ball-elastic-dots la-sm">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="loader-title">Small (.la-sm)</div>
+            </div>
+            <div class="loader">
+                <div class="la-ball-elastic-dots">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="loader-title">Normal</div>
+            </div>
+            <div class="loader">
+                <div class="la-ball-elastic-dots la-lg">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="loader-title">Large (.la-lg)</div>
+            </div>
+            <div class="loader">
+                <div class="la-ball-elastic-dots la-2x">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="loader-title">Extra Large (.la-2x)</div>
+            </div>
+        </div>
+    </main>
+    <div class="bg-light">
+        <main class="small">
+            <div class="loaders showroom">
+                <div class="loader">
+                    <div class="la-ball-elastic-dots la-dark la-sm">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="loader-title">Small (.la-dark .la-sm)</div>
+                </div>
+                <div class="loader">
+                    <div class="la-ball-elastic-dots la-dark">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="loader-title">Normal (.la-dark)</div>
+                </div>
+                <div class="loader">
+                    <div class="la-ball-elastic-dots la-dark la-lg">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="loader-title">Large (.la-dark .la-lg)</div>
+                </div>
+                <div class="loader">
+                    <div class="la-ball-elastic-dots la-dark la-2x">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="loader-title">Extra Large (.la-dark .la-2x)</div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <main class="configuration">
+        <h2>Usage</h2>
+        <h3>HTML</h3>
+        <pre><code class="language-markup">&lt;div class="la-ball-elastic-dots"&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        <h3>CSS
+            <sup>**</sup>
+        </h3>
+        <pre><code class="language-css">.la-ball-elastic-dots {
+    position: relative;
+}
+.la-ball-elastic-dots &gt; div {
+    position: relative;
+    box-sizing: content-box;
+    color: #fff;
+    background: #fff;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0;
+}
+.la-ball-elastic-dots:after {
+    display: table;
+    clear: both;
+    line-height: 0;
+    content: "";
+}
+.la-ball-elastic-dots.la-dark &gt; div {
+    color: #444;
+    background: #444;
+    border-color: #444;
+}
+.la-ball-elastic-dots {
+    width: 120px;
+    height: 10px;
+    font-size: 0;
+    text-align: center;
+}
+.la-ball-elastic-dots &gt; div {
+    display: inline-block;
+    float: none;
+    width: 10px;
+    height: 10px;
+    white-space: nowrap;
+    border-radius: 100%;
+    animation: ball-elastic-dots-anim 1s infinite;
+}
+.la-ball-elastic-dots.la-sm {
+    width: 60px;
+    height: 5px;
+}
+.la-ball-elastic-dots.la-sm &gt; div {
+    width: 5px;
+    height: 5px;
+}
+.la-ball-elastic-dots.la-lg {
+    width: 180px;
+    height: 15px;
+}
+.la-ball-elastic-dots.la-lg &gt; div {
+    width: 15px;
+    height: 15px;
+}
+.la-ball-elastic-dots.la-2x {
+    width: 240px;
+    height: 20px;
+}
+.la-ball-elastic-dots.la-2x &gt; div {
+    width: 20px;
+    height: 20px;
+}
+/*
+ * Animation
+ */
+@keyframes ball-elastic-dots-anim {
+    0%,
+    100% {
+        margin: 0;
+        transform: scale(1);
+    }
+    50% {
+        margin: 0 5%;
+        transform: scale(.65);
+    }
+}</code></pre>
+        <p>**
+            <i>Note:</i> If you copy this code, you may need to add vendor prefixes for better browser compatibility. If you download our package, the CSS files are fully compatible.</p>
+    </main>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/script.js"></script>
+</body>
+</html>

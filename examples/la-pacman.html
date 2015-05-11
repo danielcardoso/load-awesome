@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Pacman » Load Awesome</title>
+    <meta name="description" content="An awesome collection of Loaders and Spinners. Delightful and performance-focused Pure CSS animations">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/loaders.css" />
+</head>
+<body style="background-color: #f4696b; color: #f4696b;">
+    <header class="absolute">
+        <div class="header-container">
+            <div class="left">
+                <h1>Pacman
+                    <span>Awesome</span>
+                </h1>
+            </div>
+            <div class="right text-right">
+                <span class="btngroup">
+                    <a href="./" class="btn btn-circle">View All</a>
+                </span>
+            </div>
+            <div class="cf"></div>
+        </div>
+    </header>
+    <main>
+        <div class="loaders showroom">
+            <div class="loader">
+                <div class="la-pacman la-sm">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="loader-title">Small (.la-sm)</div>
+            </div>
+            <div class="loader">
+                <div class="la-pacman">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="loader-title">Normal</div>
+            </div>
+            <div class="loader">
+                <div class="la-pacman la-lg">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="loader-title">Large (.la-lg)</div>
+            </div>
+            <div class="loader">
+                <div class="la-pacman la-2x">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="loader-title">Extra Large (.la-2x)</div>
+            </div>
+        </div>
+    </main>
+    <div class="bg-light">
+        <main class="small">
+            <div class="loaders showroom">
+                <div class="loader">
+                    <div class="la-pacman la-dark la-sm">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="loader-title">Small (.la-dark .la-sm)</div>
+                </div>
+                <div class="loader">
+                    <div class="la-pacman la-dark">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="loader-title">Normal (.la-dark)</div>
+                </div>
+                <div class="loader">
+                    <div class="la-pacman la-dark la-lg">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="loader-title">Large (.la-dark .la-lg)</div>
+                </div>
+                <div class="loader">
+                    <div class="la-pacman la-dark la-2x">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="loader-title">Extra Large (.la-dark .la-2x)</div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <main class="configuration">
+        <h2>Usage</h2>
+        <h3>HTML</h3>
+        <pre><code class="language-markup">&lt;div class="la-pacman"&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        <h3>CSS
+            <sup>**</sup>
+        </h3>
+        <pre><code class="language-css">.la-pacman {
+    position: relative;
+}
+.la-pacman &gt; div {
+    position: relative;
+    box-sizing: content-box;
+    color: #fff;
+    background: #fff;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0;
+}
+.la-pacman:after {
+    display: table;
+    clear: both;
+    line-height: 0;
+    content: "";
+}
+.la-pacman.la-dark &gt; div {
+    color: #444;
+    background: #444;
+    border-color: #444;
+}
+.la-pacman {
+    width: 32px;
+    height: 32px;
+}
+.la-pacman &gt; div:nth-child(3) {
+    animation: pacman-balls 1s 350ms infinite linear;
+}
+.la-pacman &gt; div:nth-child(4) {
+    animation: pacman-balls 1s 100ms infinite linear;
+}
+.la-pacman &gt; div:nth-child(5) {
+    animation: pacman-balls 1s -150ms infinite linear;
+}
+.la-pacman &gt; div:nth-child(6) {
+    animation: pacman-balls 1s -400ms infinite linear;
+}
+.la-pacman &gt; div:first-of-type {
+    width: 0;
+    height: 0;
+    background: transparent;
+    border-style: solid;
+    border-width: 16px;
+    border-right-color: transparent;
+    border-radius: 100%;
+    animation: pacman-rotate-half-up .5s 0s infinite;
+}
+.la-pacman &gt; div:nth-child(2) {
+    width: 0;
+    height: 0;
+    margin-top: -32px;
+    background: transparent;
+    border-style: solid;
+    border-width: 16px;
+    border-right-color: transparent;
+    border-radius: 100%;
+    animation: pacman-rotate-half-down .5s 0s infinite;
+}
+.la-pacman &gt; div:nth-child(3),
+.la-pacman &gt; div:nth-child(4),
+.la-pacman &gt; div:nth-child(5),
+.la-pacman &gt; div:nth-child(6) {
+    position: absolute;
+    top: 50%;
+    left: 200%;
+    float: left;
+    width: 8px;
+    height: 8px;
+    margin: 2px;
+    border-radius: 100%;
+    opacity: 0;
+}
+.la-pacman.la-sm &gt; div:first-of-type {
+    border-width: 8px;
+}
+.la-pacman.la-sm &gt; div:nth-child(2) {
+    margin-top: -16px;
+    border-width: 8px;
+}
+.la-pacman.la-sm &gt; div:nth-child(3),
+.la-pacman.la-sm &gt; div:nth-child(4),
+.la-pacman.la-sm &gt; div:nth-child(5),
+.la-pacman.la-sm &gt; div:nth-child(6) {
+    width: 4px;
+    height: 4px;
+    margin: 1px;
+}
+.la-pacman.la-lg &gt; div:first-of-type {
+    border-width: 24px;
+}
+.la-pacman.la-lg &gt; div:nth-child(2) {
+    margin-top: -48px;
+    border-width: 24px;
+}
+.la-pacman.la-lg &gt; div:nth-child(3),
+.la-pacman.la-lg &gt; div:nth-child(4),
+.la-pacman.la-lg &gt; div:nth-child(5),
+.la-pacman.la-lg &gt; div:nth-child(6) {
+    width: 12px;
+    height: 12px;
+    margin: 3px;
+}
+.la-pacman.la-2x &gt; div:first-of-type {
+    border-width: 32px;
+}
+.la-pacman.la-2x &gt; div:nth-child(2) {
+    margin-top: -64px;
+    border-width: 32px;
+}
+.la-pacman.la-2x &gt; div:nth-child(3),
+.la-pacman.la-2x &gt; div:nth-child(4),
+.la-pacman.la-2x &gt; div:nth-child(5),
+.la-pacman.la-2x &gt; div:nth-child(6) {
+    width: 16px;
+    height: 16px;
+    margin: 4px;
+}
+/*
+ * Animations
+ */
+@keyframes pacman-rotate-half-up {
+    0% {
+        transform: rotate(270deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(270deg);
+    }
+}
+@keyframes pacman-rotate-half-down {
+    0% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(90deg);
+    }
+}
+@keyframes pacman-balls {
+    0% {
+        left: 200%;
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    5% {
+        opacity: .5;
+    }
+    66% {
+        opacity: 1;
+    }
+    67% {
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        transform: translateY(-50%);
+    }
+}</code></pre>
+        <p>**
+            <i>Note:</i> If you copy this code, you may need to add vendor prefixes for better browser compatibility. If you download our package, the CSS files are fully compatible.</p>
+    </main>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Ball Atom » Load Awesome</title>
+    <meta name="description" content="An awesome collection of Loaders and Spinners. Delightful and performance-focused Pure CSS animations">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/loaders.css" />
+</head>
+<body style="background-color: #dbbe39; color: #dbbe39;">
+    <header class="absolute">
+        <div class="header-container">
+            <div class="left">
+                <h1>Ball Atom
+                    <span>Awesome</span>
+                </h1>
+            </div>
+            <div class="right text-right">
+                <span class="btngroup">
+                    <a href="./" class="btn btn-circle">View All</a>
+                </span>
+            </div>
+            <div class="cf"></div>
+        </div>
+    </header>
+    <main>
+        <div class="loaders showroom">
+            <div class="loader">
+                <div class="la-ball-atom la-sm">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="loader-title">Small (.la-sm)</div>
+            </div>
+            <div class="loader">
+                <div class="la-ball-atom">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="loader-title">Normal</div>
+            </div>
+            <div class="loader">
+                <div class="la-ball-atom la-lg">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="loader-title">Large (.la-lg)</div>
+            </div>
+            <div class="loader">
+                <div class="la-ball-atom la-2x">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="loader-title">Extra Large (.la-2x)</div>
+            </div>
+        </div>
+    </main>
+    <div class="bg-light">
+        <main class="small">
+            <div class="loaders showroom">
+                <div class="loader">
+                    <div class="la-ball-atom la-dark la-sm">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="loader-title">Small (.la-dark .la-sm)</div>
+                </div>
+                <div class="loader">
+                    <div class="la-ball-atom la-dark">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="loader-title">Normal (.la-dark)</div>
+                </div>
+                <div class="loader">
+                    <div class="la-ball-atom la-dark la-lg">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="loader-title">Large (.la-dark .la-lg)</div>
+                </div>
+                <div class="loader">
+                    <div class="la-ball-atom la-dark la-2x">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="loader-title">Extra Large (.la-dark .la-2x)</div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <main class="configuration">
+        <h2>Usage</h2>
+        <h3>HTML</h3>
+        <pre><code class="language-markup">&lt;div class="la-ball-atom"&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        <h3>CSS
+            <sup>**</sup>
+        </h3>
+        <pre><code class="language-css">.la-ball-atom {
+    position: relative;
+}
+.la-ball-atom &gt; div {
+    position: relative;
+    box-sizing: content-box;
+    color: #fff;
+    background: #fff;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0;
+}
+.la-ball-atom:after {
+    display: table;
+    clear: both;
+    line-height: 0;
+    content: "";
+}
+.la-ball-atom.la-dark &gt; div {
+    color: #444;
+    background: #444;
+    border-color: #444;
+}
+.la-ball-atom {
+    width: 32px;
+    height: 32px;
+}
+.la-ball-atom &gt; div:nth-child(1) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    width: 60%;
+    height: 60%;
+    background: #aaa;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    animation: ball-atom-shrink 4.5s infinite linear;
+}
+.la-ball-atom &gt; div:not(:nth-child(1)) {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background: none !important;
+    animation: ball-atom-zindex 1.5s 0s infinite steps(2, end);
+}
+.la-ball-atom &gt; div:not(:nth-child(1)):before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
+    margin-left: -5px;
+    content: "";
+    background: currentColor;
+    border-radius: 50%;
+    opacity: .75;
+    animation: ball-atom-position 1.5s 0s infinite ease, ball-atom-size 1.5s 0s infinite ease;
+}
+.la-ball-atom &gt; div:nth-child(2) {
+    animation-delay: .75s;
+}
+.la-ball-atom &gt; div:nth-child(2):before {
+    animation-delay: 0s, -1.125s;
+}
+.la-ball-atom &gt; div:nth-child(3) {
+    transform: rotate(120deg);
+    animation-delay: -.25s;
+}
+.la-ball-atom &gt; div:nth-child(3):before {
+    animation-delay: -1s, -.75s;
+}
+.la-ball-atom &gt; div:nth-child(4) {
+    transform: rotate(240deg);
+    animation-delay: .25s;
+}
+.la-ball-atom &gt; div:nth-child(4):before {
+    animation-delay: -.5s, -.125s;
+}
+.la-ball-atom.la-sm {
+    width: 16px;
+    height: 16px;
+}
+.la-ball-atom.la-sm &gt; div:before {
+    width: 5px;
+    height: 5px;
+    margin-top: -3px;
+    margin-left: -3px;
+}
+.la-ball-atom.la-lg {
+    width: 48px;
+    height: 48px;
+}
+.la-ball-atom.la-lg &gt; div:before {
+    width: 15px;
+    height: 15px;
+    margin-top: -8px;
+    margin-left: -8px;
+}
+.la-ball-atom.la-2x {
+    width: 64px;
+    height: 64px;
+}
+.la-ball-atom.la-2x &gt; div:before {
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+/*
+ * Animations
+ */
+@keyframes ball-atom-position {
+    50% {
+        top: 100%;
+        left: 100%;
+    }
+}
+@keyframes ball-atom-size {
+    50% {
+        transform: scale(.5, .5);
+    }
+}
+@keyframes ball-atom-zindex {
+    50% {
+        z-index: 10;
+    }
+}
+@keyframes ball-atom-shrink {
+    50% {
+        transform: translate(-50%, -50%) scale(.8, .8);
+    }
+}</code></pre>
+        <p>**
+            <i>Note:</i> If you copy this code, you may need to add vendor prefixes for better browser compatibility. If you download our package, the CSS files are fully compatible.</p>
+    </main>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/script.js"></script>
+</body>
+</html>

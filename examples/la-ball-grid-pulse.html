@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Ball Grid Pulse » Load Awesome</title>
+    <meta name="description" content="An awesome collection of Loaders and Spinners. Delightful and performance-focused Pure CSS animations">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/loaders.css" />
+</head>
+<body style="background-color: #9988cd; color: #9988cd;">
+    <header class="absolute">
+        <div class="header-container">
+            <div class="left">
+                <h1>Ball Grid Pulse
+                    <span>Awesome</span>
+                </h1>
+            </div>
+            <div class="right text-right">
+                <span class="btngroup">
+                    <a href="./" class="btn btn-circle">View All</a>
+                </span>
+            </div>
+            <div class="cf"></div>
+        </div>
+    </header>
+    <main>
+        <div class="loaders showroom">
+            <div class="loader">
+                <div class="la-ball-grid-pulse la-sm">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="loader-title">Small (.la-sm)</div>
+            </div>
+            <div class="loader">
+                <div class="la-ball-grid-pulse">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="loader-title">Normal</div>
+            </div>
+            <div class="loader">
+                <div class="la-ball-grid-pulse la-lg">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="loader-title">Large (.la-lg)</div>
+            </div>
+            <div class="loader">
+                <div class="la-ball-grid-pulse la-2x">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="loader-title">Extra Large (.la-2x)</div>
+            </div>
+        </div>
+    </main>
+    <div class="bg-light">
+        <main class="small">
+            <div class="loaders showroom">
+                <div class="loader">
+                    <div class="la-ball-grid-pulse la-dark la-sm">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="loader-title">Small (.la-dark .la-sm)</div>
+                </div>
+                <div class="loader">
+                    <div class="la-ball-grid-pulse la-dark">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="loader-title">Normal (.la-dark)</div>
+                </div>
+                <div class="loader">
+                    <div class="la-ball-grid-pulse la-dark la-lg">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="loader-title">Large (.la-dark .la-lg)</div>
+                </div>
+                <div class="loader">
+                    <div class="la-ball-grid-pulse la-dark la-2x">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="loader-title">Extra Large (.la-dark .la-2x)</div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <main class="configuration">
+        <h2>Usage</h2>
+        <h3>HTML</h3>
+        <pre><code class="language-markup">&lt;div class="la-ball-grid-pulse"&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        <h3>CSS
+            <sup>**</sup>
+        </h3>
+        <pre><code class="language-css">.la-ball-grid-pulse {
+    position: relative;
+}
+.la-ball-grid-pulse &gt; div {
+    position: relative;
+    box-sizing: content-box;
+    color: #fff;
+    background: #fff;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0;
+}
+.la-ball-grid-pulse:after {
+    display: table;
+    clear: both;
+    line-height: 0;
+    content: "";
+}
+.la-ball-grid-pulse.la-dark &gt; div {
+    color: #444;
+    background: #444;
+    border-color: #444;
+}
+.la-ball-grid-pulse {
+    width: 36px;
+}
+.la-ball-grid-pulse &gt; div {
+    display: inline-block;
+    float: left;
+    float: left;
+    width: 8px;
+    height: 8px;
+    margin: 2px;
+    border-radius: 100%;
+    animation-name: ball-grid-pulse;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+}
+.la-ball-grid-pulse &gt; div:nth-child(1) {
+    animation-duration: .85s;
+    animation-delay: -.18s;
+}
+.la-ball-grid-pulse &gt; div:nth-child(2) {
+    animation-duration: 1s;
+    animation-delay: -.69s;
+}
+.la-ball-grid-pulse &gt; div:nth-child(3) {
+    animation-duration: .86s;
+    animation-delay: -.47s;
+}
+.la-ball-grid-pulse &gt; div:nth-child(4) {
+    animation-duration: .62s;
+    animation-delay: -.36s;
+}
+.la-ball-grid-pulse &gt; div:nth-child(5) {
+    animation-duration: 1.37s;
+    animation-delay: .01s;
+}
+.la-ball-grid-pulse &gt; div:nth-child(6) {
+    animation-duration: 1.5s;
+    animation-delay: -.66s;
+}
+.la-ball-grid-pulse &gt; div:nth-child(7) {
+    animation-duration: 1.33s;
+    animation-delay: -.63s;
+}
+.la-ball-grid-pulse &gt; div:nth-child(8) {
+    animation-duration: 1.36s;
+    animation-delay: -.09s;
+}
+.la-ball-grid-pulse &gt; div:nth-child(9) {
+    animation-duration: .65s;
+    animation-delay: -.56s;
+}
+.la-ball-grid-pulse.la-sm {
+    width: 18px;
+}
+.la-ball-grid-pulse.la-sm &gt; div {
+    width: 4px;
+    height: 4px;
+    margin: 1px;
+}
+.la-ball-grid-pulse.la-lg {
+    width: 54px;
+}
+.la-ball-grid-pulse.la-lg &gt; div {
+    width: 12px;
+    height: 12px;
+    margin: 3px;
+}
+.la-ball-grid-pulse.la-2x {
+    width: 72px;
+}
+.la-ball-grid-pulse.la-2x &gt; div {
+    width: 16px;
+    height: 16px;
+    margin: 4px;
+}
+/*
+ * Animation
+ */
+@keyframes ball-grid-pulse {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: .35;
+        transform: scale(.45);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}</code></pre>
+        <p>**
+            <i>Note:</i> If you copy this code, you may need to add vendor prefixes for better browser compatibility. If you download our package, the CSS files are fully compatible.</p>
+    </main>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/script.js"></script>
+</body>
+</html>

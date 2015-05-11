@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Ball Fall » Load Awesome</title>
+    <meta name="description" content="An awesome collection of Loaders and Spinners. Delightful and performance-focused Pure CSS animations">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/loaders.css" />
+</head>
+<body style="background-color: #f4696b; color: #f4696b;">
+    <header class="absolute">
+        <div class="header-container">
+            <div class="left">
+                <h1>Ball Fall
+                    <span>Awesome</span>
+                </h1>
+            </div>
+            <div class="right text-right">
+                <span class="btngroup">
+                    <a href="./" class="btn btn-circle">View All</a>
+                </span>
+            </div>
+            <div class="cf"></div>
+        </div>
+    </header>
+    <main>
+        <div class="loaders showroom">
+            <div class="loader">
+                <div class="la-ball-fall la-sm">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="loader-title">Small (.la-sm)</div>
+            </div>
+            <div class="loader">
+                <div class="la-ball-fall">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="loader-title">Normal</div>
+            </div>
+            <div class="loader">
+                <div class="la-ball-fall la-lg">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="loader-title">Large (.la-lg)</div>
+            </div>
+            <div class="loader">
+                <div class="la-ball-fall la-2x">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="loader-title">Extra Large (.la-2x)</div>
+            </div>
+        </div>
+    </main>
+    <div class="bg-light">
+        <main class="small">
+            <div class="loaders showroom">
+                <div class="loader">
+                    <div class="la-ball-fall la-dark la-sm">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="loader-title">Small (.la-dark .la-sm)</div>
+                </div>
+                <div class="loader">
+                    <div class="la-ball-fall la-dark">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="loader-title">Normal (.la-dark)</div>
+                </div>
+                <div class="loader">
+                    <div class="la-ball-fall la-dark la-lg">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="loader-title">Large (.la-dark .la-lg)</div>
+                </div>
+                <div class="loader">
+                    <div class="la-ball-fall la-dark la-2x">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="loader-title">Extra Large (.la-dark .la-2x)</div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <main class="configuration">
+        <h2>Usage</h2>
+        <h3>HTML</h3>
+        <pre><code class="language-markup">&lt;div class="la-ball-fall"&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        <h3>CSS
+            <sup>**</sup>
+        </h3>
+        <pre><code class="language-css">.la-ball-fall {
+    position: relative;
+}
+.la-ball-fall &gt; div {
+    position: relative;
+    box-sizing: content-box;
+    color: #fff;
+    background: #fff;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0;
+}
+.la-ball-fall:after {
+    display: table;
+    clear: both;
+    line-height: 0;
+    content: "";
+}
+.la-ball-fall.la-dark &gt; div {
+    color: #444;
+    background: #444;
+    border-color: #444;
+}
+.la-ball-fall {
+    height: 22px;
+}
+.la-ball-fall &gt; div {
+    position: relative;
+    top: -20px;
+    display: inline-block;
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin: 6px;
+    border-radius: 100%;
+    opacity: 0;
+    animation: ball-fall 1s ease-in-out infinite;
+}
+.la-ball-fall &gt; div:nth-child(1) {
+    animation-delay: 0ms;
+}
+.la-ball-fall &gt; div:nth-child(2) {
+    animation-delay: 100ms;
+}
+.la-ball-fall &gt; div:nth-child(3) {
+    animation-delay: 200ms;
+}
+.la-ball-fall.la-sm {
+    height: 11px;
+}
+.la-ball-fall.la-sm &gt; div {
+    width: 5px;
+    height: 5px;
+    margin: 3px;
+}
+.la-ball-fall.la-lg {
+    height: 33px;
+}
+.la-ball-fall.la-lg &gt; div {
+    width: 15px;
+    height: 15px;
+    margin: 9px;
+}
+.la-ball-fall.la-2x {
+    height: 44px;
+}
+.la-ball-fall.la-2x &gt; div {
+    width: 20px;
+    height: 20px;
+    margin: 12px;
+}
+/*
+ * Animation
+ */
+@keyframes ball-fall {
+    0% {
+        top: -125%;
+        opacity: 0;
+    }
+    10% {
+        opacity: .5;
+    }
+    20% {
+        top: 0;
+        opacity: 1;
+    }
+    80% {
+        top: 0;
+        opacity: 1;
+    }
+    90% {
+        opacity: .5;
+    }
+    100% {
+        top: 125%;
+        opacity: 0;
+    }
+}</code></pre>
+        <p>**
+            <i>Note:</i> If you copy this code, you may need to add vendor prefixes for better browser compatibility. If you download our package, the CSS files are fully compatible.</p>
+    </main>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+/*!
+ * Load Awesome v0.1.0 (http://github.danielcardoso.net/load-awesome/)
+ * Copyright 2015 Daniel Cardoso <@DanielCardoso>
+ * Licensed under MIT
+ */
+.la-ball-rotate {
+    position: relative;
+}
+.la-ball-rotate > div {
+    position: relative;
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+    color: #fff;
+    background: #fff;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0;
+}
+.la-ball-rotate:after {
+    display: table;
+    clear: both;
+    line-height: 0;
+    content: "";
+}
+.la-ball-rotate.la-dark > div {
+    color: #444;
+    background: #444;
+    border-color: #444;
+}
+
+.la-ball-rotate {
+    width: 10px;
+    height: 10px;
+}
+.la-ball-rotate > div {
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    -webkit-animation: ball-rotate-animation 1s cubic-bezier(.7, -.13, .22, .86) infinite;
+       -moz-animation: ball-rotate-animation 1s cubic-bezier(.7, -.13, .22, .86) infinite;
+         -o-animation: ball-rotate-animation 1s cubic-bezier(.7, -.13, .22, .86) infinite;
+            animation: ball-rotate-animation 1s cubic-bezier(.7, -.13, .22, .86) infinite;
+}
+.la-ball-rotate > div:before,
+.la-ball-rotate > div:after {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    margin: inherit;
+    content: "";
+    background: inherit;
+    border-radius: inherit;
+    opacity: .8;
+}
+.la-ball-rotate > div:before {
+    top: 0;
+    left: -150%;
+}
+.la-ball-rotate > div:after {
+    top: 0;
+    left: 150%;
+}
+.la-ball-rotate.la-sm {
+    width: 5px;
+    height: 5px;
+}
+.la-ball-rotate.la-sm > div {
+    width: 5px;
+    height: 5px;
+}
+.la-ball-rotate.la-lg {
+    width: 15px;
+    height: 15px;
+}
+.la-ball-rotate.la-lg > div {
+    width: 15px;
+    height: 15px;
+}
+.la-ball-rotate.la-2x {
+    width: 20px;
+    height: 20px;
+}
+.la-ball-rotate.la-2x > div {
+    width: 20px;
+    height: 20px;
+}
+
+/*
+ * Animation
+ */
+@-webkit-keyframes ball-rotate-animation {
+    0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+@-moz-keyframes ball-rotate-animation {
+    0% {
+        -moz-transform: rotate(0deg);
+             transform: rotate(0deg);
+    }
+    50% {
+        -moz-transform: rotate(180deg);
+             transform: rotate(180deg);
+    }
+    100% {
+        -moz-transform: rotate(360deg);
+             transform: rotate(360deg);
+    }
+}
+@-o-keyframes ball-rotate-animation {
+    0% {
+        -o-transform: rotate(0deg);
+           transform: rotate(0deg);
+    }
+    50% {
+        -o-transform: rotate(180deg);
+           transform: rotate(180deg);
+    }
+    100% {
+        -o-transform: rotate(360deg);
+           transform: rotate(360deg);
+    }
+}
+@keyframes ball-rotate-animation {
+    0% {
+        -webkit-transform: rotate(0deg);
+           -moz-transform: rotate(0deg);
+             -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+           -moz-transform: rotate(180deg);
+             -o-transform: rotate(180deg);
+                transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+           -moz-transform: rotate(360deg);
+             -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}

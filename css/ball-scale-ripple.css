@@ -1,0 +1,143 @@
+/*!
+ * Load Awesome v0.1.0 (http://github.danielcardoso.net/load-awesome/)
+ * Copyright 2015 Daniel Cardoso <@DanielCardoso>
+ * Licensed under MIT
+ */
+.la-ball-scale-ripple {
+    position: relative;
+}
+.la-ball-scale-ripple > div {
+    position: relative;
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+    color: #fff;
+    background: #fff;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0;
+}
+.la-ball-scale-ripple:after {
+    display: table;
+    clear: both;
+    line-height: 0;
+    content: "";
+}
+.la-ball-scale-ripple.la-dark > div {
+    color: #444;
+    background: #444;
+    border-color: #444;
+}
+
+.la-ball-scale-ripple {
+    width: 32px;
+    height: 32px;
+}
+.la-ball-scale-ripple > div {
+    float: left;
+    width: 28px;
+    height: 28px;
+    background: transparent !important;
+    border-width: 2px;
+    border-radius: 100%;
+    opacity: 0;
+    -webkit-animation: ball-scale-ripple 1s 0s infinite cubic-bezier(.21, .53, .56, .8);
+       -moz-animation: ball-scale-ripple 1s 0s infinite cubic-bezier(.21, .53, .56, .8);
+         -o-animation: ball-scale-ripple 1s 0s infinite cubic-bezier(.21, .53, .56, .8);
+            animation: ball-scale-ripple 1s 0s infinite cubic-bezier(.21, .53, .56, .8);
+}
+.la-ball-scale-ripple.la-sm {
+    width: 16px;
+    height: 16px;
+}
+.la-ball-scale-ripple.la-sm > div {
+    width: 14px;
+    height: 14px;
+    border-width: 1px;
+}
+.la-ball-scale-ripple.la-lg {
+    width: 48px;
+    height: 48px;
+}
+.la-ball-scale-ripple.la-lg > div {
+    width: 42px;
+    height: 42px;
+    border-width: 3px;
+}
+.la-ball-scale-ripple.la-2x {
+    width: 64px;
+    height: 64px;
+}
+.la-ball-scale-ripple.la-2x > div {
+    width: 56px;
+    height: 56px;
+    border-width: 4px;
+}
+
+/*
+ * Animation
+ */
+@-webkit-keyframes ball-scale-ripple {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(.1);
+                transform: scale(.1);
+    }
+    70% {
+        opacity: .65;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-moz-keyframes ball-scale-ripple {
+    0% {
+        opacity: 1;
+        -moz-transform: scale(.1);
+             transform: scale(.1);
+    }
+    70% {
+        opacity: .65;
+        -moz-transform: scale(1);
+             transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-o-keyframes ball-scale-ripple {
+    0% {
+        opacity: 1;
+        -o-transform: scale(.1);
+           transform: scale(.1);
+    }
+    70% {
+        opacity: .65;
+        -o-transform: scale(1);
+           transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes ball-scale-ripple {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(.1);
+           -moz-transform: scale(.1);
+             -o-transform: scale(.1);
+                transform: scale(.1);
+    }
+    70% {
+        opacity: .65;
+        -webkit-transform: scale(1);
+           -moz-transform: scale(1);
+             -o-transform: scale(1);
+                transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+    }
+}

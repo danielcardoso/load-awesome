@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Ball Clip Rotate Multiple » Load Awesome</title>
+    <meta name="description" content="An awesome collection of Loaders and Spinners. Delightful and performance-focused Pure CSS animations">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/loaders.css" />
+</head>
+<body style="background-color: #87c4a3; color: #87c4a3;">
+    <header class="absolute">
+        <div class="header-container">
+            <div class="left">
+                <h1>Ball Clip Rotate Multiple
+                    <span>Awesome</span>
+                </h1>
+            </div>
+            <div class="right text-right">
+                <span class="btngroup">
+                    <a href="./" class="btn btn-circle">View All</a>
+                </span>
+            </div>
+            <div class="cf"></div>
+        </div>
+    </header>
+    <main>
+        <div class="loaders showroom">
+            <div class="loader">
+                <div class="la-ball-clip-rotate-multiple la-sm">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="loader-title">Small (.la-sm)</div>
+            </div>
+            <div class="loader">
+                <div class="la-ball-clip-rotate-multiple">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="loader-title">Normal</div>
+            </div>
+            <div class="loader">
+                <div class="la-ball-clip-rotate-multiple la-lg">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="loader-title">Large (.la-lg)</div>
+            </div>
+            <div class="loader">
+                <div class="la-ball-clip-rotate-multiple la-2x">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="loader-title">Extra Large (.la-2x)</div>
+            </div>
+        </div>
+    </main>
+    <div class="bg-light">
+        <main class="small">
+            <div class="loaders showroom">
+                <div class="loader">
+                    <div class="la-ball-clip-rotate-multiple la-dark la-sm">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="loader-title">Small (.la-dark .la-sm)</div>
+                </div>
+                <div class="loader">
+                    <div class="la-ball-clip-rotate-multiple la-dark">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="loader-title">Normal (.la-dark)</div>
+                </div>
+                <div class="loader">
+                    <div class="la-ball-clip-rotate-multiple la-dark la-lg">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="loader-title">Large (.la-dark .la-lg)</div>
+                </div>
+                <div class="loader">
+                    <div class="la-ball-clip-rotate-multiple la-dark la-2x">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="loader-title">Extra Large (.la-dark .la-2x)</div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <main class="configuration">
+        <h2>Usage</h2>
+        <h3>HTML</h3>
+        <pre><code class="language-markup">&lt;div class="la-ball-clip-rotate-multiple"&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        <h3>CSS
+            <sup>**</sup>
+        </h3>
+        <pre><code class="language-css">.la-ball-clip-rotate-multiple {
+    position: relative;
+}
+.la-ball-clip-rotate-multiple &gt; div {
+    position: relative;
+    box-sizing: content-box;
+    color: #fff;
+    background: #fff;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0;
+}
+.la-ball-clip-rotate-multiple:after {
+    display: table;
+    clear: both;
+    line-height: 0;
+    content: "";
+}
+.la-ball-clip-rotate-multiple.la-dark &gt; div {
+    color: #444;
+    background: #444;
+    border-color: #444;
+}
+.la-ball-clip-rotate-multiple {
+    width: 32px;
+    height: 32px;
+}
+.la-ball-clip-rotate-multiple &gt; div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent !important;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 100%;
+    animation: ball-clip-rotate-multiple-rotate 1s ease-in-out infinite;
+}
+.la-ball-clip-rotate-multiple &gt; div:first-child {
+    top: 7px;
+    left: 7px;
+    width: 14px;
+    height: 14px;
+    border-top-color: transparent !important;
+    border-bottom-color: transparent !important;
+    animation-duration: .5s;
+    animation-direction: reverse;
+}
+.la-ball-clip-rotate-multiple &gt; div:last-child {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-right-color: transparent !important;
+    border-left-color: transparent !important;
+}
+.la-ball-clip-rotate-multiple.la-sm {
+    width: 16px;
+    height: 16px;
+}
+.la-ball-clip-rotate-multiple.la-sm &gt; div {
+    border-width: 1px;
+}
+.la-ball-clip-rotate-multiple.la-sm &gt; div:first-child {
+    top: 4px;
+    left: 4px;
+    width: 6px;
+    height: 6px;
+}
+.la-ball-clip-rotate-multiple.la-sm &gt; div:last-child {
+    width: 14px;
+    height: 14px;
+}
+.la-ball-clip-rotate-multiple.la-lg {
+    width: 48px;
+    height: 48px;
+}
+.la-ball-clip-rotate-multiple.la-lg &gt; div {
+    border-width: 3px;
+}
+.la-ball-clip-rotate-multiple.la-lg &gt; div:first-child {
+    top: 11px;
+    left: 11px;
+    width: 20px;
+    height: 20px;
+}
+.la-ball-clip-rotate-multiple.la-lg &gt; div:last-child {
+    width: 42px;
+    height: 42px;
+}
+.la-ball-clip-rotate-multiple.la-2x {
+    width: 64px;
+    height: 64px;
+}
+.la-ball-clip-rotate-multiple.la-2x &gt; div {
+    border-width: 4px;
+}
+.la-ball-clip-rotate-multiple.la-2x &gt; div:first-child {
+    top: 14px;
+    left: 14px;
+    width: 28px;
+    height: 28px;
+}
+.la-ball-clip-rotate-multiple.la-2x &gt; div:last-child {
+    width: 56px;
+    height: 56px;
+}
+/*
+ * Animation
+ */
+@keyframes ball-clip-rotate-multiple-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}</code></pre>
+        <p>**
+            <i>Note:</i> If you copy this code, you may need to add vendor prefixes for better browser compatibility. If you download our package, the CSS files are fully compatible.</p>
+    </main>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/script.js"></script>
+</body>
+</html>

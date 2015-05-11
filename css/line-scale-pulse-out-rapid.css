@@ -1,0 +1,158 @@
+/*!
+ * Load Awesome v0.1.0 (http://github.danielcardoso.net/load-awesome/)
+ * Copyright 2015 Daniel Cardoso <@DanielCardoso>
+ * Licensed under MIT
+ */
+.la-line-scale-pulse-out-rapid {
+    position: relative;
+}
+.la-line-scale-pulse-out-rapid > div {
+    position: relative;
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+    color: #fff;
+    background: #fff;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0;
+}
+.la-line-scale-pulse-out-rapid:after {
+    display: table;
+    clear: both;
+    line-height: 0;
+    content: "";
+}
+.la-line-scale-pulse-out-rapid.la-dark > div {
+    color: #444;
+    background: #444;
+    border-color: #444;
+}
+
+.la-line-scale-pulse-out-rapid {
+    height: 32px;
+}
+.la-line-scale-pulse-out-rapid > div {
+    display: inline-block;
+    float: left;
+    width: 4px;
+    height: 32px;
+    margin: 2px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 0;
+    -webkit-animation: line-scale-pulse-out-rapid .9s infinite cubic-bezier(.11, .49, .38, .78);
+       -moz-animation: line-scale-pulse-out-rapid .9s infinite cubic-bezier(.11, .49, .38, .78);
+         -o-animation: line-scale-pulse-out-rapid .9s infinite cubic-bezier(.11, .49, .38, .78);
+            animation: line-scale-pulse-out-rapid .9s infinite cubic-bezier(.11, .49, .38, .78);
+}
+.la-line-scale-pulse-out-rapid > div:nth-child(3) {
+    -webkit-animation-delay: -.9s;
+       -moz-animation-delay: -.9s;
+         -o-animation-delay: -.9s;
+            animation-delay: -.9s;
+}
+.la-line-scale-pulse-out-rapid > div:nth-child(2),
+.la-line-scale-pulse-out-rapid > div:nth-child(4) {
+    -webkit-animation-delay: -.65s;
+       -moz-animation-delay: -.65s;
+         -o-animation-delay: -.65s;
+            animation-delay: -.65s;
+}
+.la-line-scale-pulse-out-rapid > div:nth-child(1),
+.la-line-scale-pulse-out-rapid > div:nth-child(5) {
+    -webkit-animation-delay: -.4s;
+       -moz-animation-delay: -.4s;
+         -o-animation-delay: -.4s;
+            animation-delay: -.4s;
+}
+.la-line-scale-pulse-out-rapid.la-sm {
+    height: 16px;
+}
+.la-line-scale-pulse-out-rapid.la-sm > div {
+    width: 2px;
+    height: 16px;
+    margin: 1px;
+}
+.la-line-scale-pulse-out-rapid.la-lg {
+    height: 48px;
+}
+.la-line-scale-pulse-out-rapid.la-lg > div {
+    width: 6px;
+    height: 48px;
+    margin: 3px;
+}
+.la-line-scale-pulse-out-rapid.la-2x {
+    height: 64px;
+}
+.la-line-scale-pulse-out-rapid.la-2x > div {
+    width: 8px;
+    height: 64px;
+    margin: 4px;
+}
+
+/*
+ * Animation
+ */
+@-webkit-keyframes line-scale-pulse-out-rapid {
+    0% {
+        -webkit-transform: scaley(1);
+                transform: scaley(1);
+    }
+    80% {
+        -webkit-transform: scaley(.3);
+                transform: scaley(.3);
+    }
+    90% {
+        -webkit-transform: scaley(1);
+                transform: scaley(1);
+    }
+}
+@-moz-keyframes line-scale-pulse-out-rapid {
+    0% {
+        -moz-transform: scaley(1);
+             transform: scaley(1);
+    }
+    80% {
+        -moz-transform: scaley(.3);
+             transform: scaley(.3);
+    }
+    90% {
+        -moz-transform: scaley(1);
+             transform: scaley(1);
+    }
+}
+@-o-keyframes line-scale-pulse-out-rapid {
+    0% {
+        -o-transform: scaley(1);
+           transform: scaley(1);
+    }
+    80% {
+        -o-transform: scaley(.3);
+           transform: scaley(.3);
+    }
+    90% {
+        -o-transform: scaley(1);
+           transform: scaley(1);
+    }
+}
+@keyframes line-scale-pulse-out-rapid {
+    0% {
+        -webkit-transform: scaley(1);
+           -moz-transform: scaley(1);
+             -o-transform: scaley(1);
+                transform: scaley(1);
+    }
+    80% {
+        -webkit-transform: scaley(.3);
+           -moz-transform: scaley(.3);
+             -o-transform: scaley(.3);
+                transform: scaley(.3);
+    }
+    90% {
+        -webkit-transform: scaley(1);
+           -moz-transform: scaley(1);
+             -o-transform: scaley(1);
+                transform: scaley(1);
+    }
+}

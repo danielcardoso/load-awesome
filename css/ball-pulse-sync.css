@@ -1,0 +1,142 @@
+/*!
+ * Load Awesome v0.1.0 (http://github.danielcardoso.net/load-awesome/)
+ * Copyright 2015 Daniel Cardoso <@DanielCardoso>
+ * Licensed under MIT
+ */
+.la-ball-pulse-sync {
+    position: relative;
+}
+.la-ball-pulse-sync > div {
+    position: relative;
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+    color: #fff;
+    background: #fff;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0;
+}
+.la-ball-pulse-sync:after {
+    display: table;
+    clear: both;
+    line-height: 0;
+    content: "";
+}
+.la-ball-pulse-sync.la-dark > div {
+    color: #444;
+    background: #444;
+    border-color: #444;
+}
+
+.la-ball-pulse-sync > div {
+    display: inline-block;
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin: 6px;
+    border-radius: 100%;
+    -webkit-animation: ball-pulse-sync .6s infinite ease-in-out;
+       -moz-animation: ball-pulse-sync .6s infinite ease-in-out;
+         -o-animation: ball-pulse-sync .6s infinite ease-in-out;
+            animation: ball-pulse-sync .6s infinite ease-in-out;
+}
+.la-ball-pulse-sync > div:nth-child(1) {
+    -webkit-animation-delay: -.14s;
+       -moz-animation-delay: -.14s;
+         -o-animation-delay: -.14s;
+            animation-delay: -.14s;
+}
+.la-ball-pulse-sync > div:nth-child(2) {
+    -webkit-animation-delay: -.07s;
+       -moz-animation-delay: -.07s;
+         -o-animation-delay: -.07s;
+            animation-delay: -.07s;
+}
+.la-ball-pulse-sync > div:nth-child(3) {
+    -webkit-animation-delay: 0s;
+       -moz-animation-delay: 0s;
+         -o-animation-delay: 0s;
+            animation-delay: 0s;
+}
+.la-ball-pulse-sync.la-sm > div {
+    width: 5px;
+    height: 5px;
+    margin: 3px;
+}
+.la-ball-pulse-sync.la-lg > div {
+    width: 15px;
+    height: 15px;
+    margin: 9px;
+}
+.la-ball-pulse-sync.la-2x > div {
+    width: 20px;
+    height: 20px;
+    margin: 12px;
+}
+
+/*
+ * Animation
+ */
+@-webkit-keyframes ball-pulse-sync {
+    33% {
+        -webkit-transform: translateY(100%);
+                transform: translateY(100%);
+    }
+    66% {
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+@-moz-keyframes ball-pulse-sync {
+    33% {
+        -moz-transform: translateY(100%);
+             transform: translateY(100%);
+    }
+    66% {
+        -moz-transform: translateY(-100%);
+             transform: translateY(-100%);
+    }
+    100% {
+        -moz-transform: translateY(0);
+             transform: translateY(0);
+    }
+}
+@-o-keyframes ball-pulse-sync {
+    33% {
+        -o-transform: translateY(100%);
+           transform: translateY(100%);
+    }
+    66% {
+        -o-transform: translateY(-100%);
+           transform: translateY(-100%);
+    }
+    100% {
+        -o-transform: translateY(0);
+           transform: translateY(0);
+    }
+}
+@keyframes ball-pulse-sync {
+    33% {
+        -webkit-transform: translateY(100%);
+           -moz-transform: translateY(100%);
+             -o-transform: translateY(100%);
+                transform: translateY(100%);
+    }
+    66% {
+        -webkit-transform: translateY(-100%);
+           -moz-transform: translateY(-100%);
+             -o-transform: translateY(-100%);
+                transform: translateY(-100%);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+           -moz-transform: translateY(0);
+             -o-transform: translateY(0);
+                transform: translateY(0);
+    }
+}

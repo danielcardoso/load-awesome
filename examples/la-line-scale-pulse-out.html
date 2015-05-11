@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Line Scale Pulse Out » Load Awesome</title>
+    <meta name="description" content="An awesome collection of Loaders and Spinners. Delightful and performance-focused Pure CSS animations">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/loaders.css" />
+</head>
+<body style="background-color: #f6d860; color: #f6d860;">
+    <header class="absolute">
+        <div class="header-container">
+            <div class="left">
+                <h1>Line Scale Pulse Out
+                    <span>Awesome</span>
+                </h1>
+            </div>
+            <div class="right text-right">
+                <span class="btngroup">
+                    <a href="./" class="btn btn-circle">View All</a>
+                </span>
+            </div>
+            <div class="cf"></div>
+        </div>
+    </header>
+    <main>
+        <div class="loaders showroom">
+            <div class="loader">
+                <div class="la-line-scale-pulse-out la-sm">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="loader-title">Small (.la-sm)</div>
+            </div>
+            <div class="loader">
+                <div class="la-line-scale-pulse-out">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="loader-title">Normal</div>
+            </div>
+            <div class="loader">
+                <div class="la-line-scale-pulse-out la-lg">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="loader-title">Large (.la-lg)</div>
+            </div>
+            <div class="loader">
+                <div class="la-line-scale-pulse-out la-2x">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="loader-title">Extra Large (.la-2x)</div>
+            </div>
+        </div>
+    </main>
+    <div class="bg-light">
+        <main class="small">
+            <div class="loaders showroom">
+                <div class="loader">
+                    <div class="la-line-scale-pulse-out la-dark la-sm">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="loader-title">Small (.la-dark .la-sm)</div>
+                </div>
+                <div class="loader">
+                    <div class="la-line-scale-pulse-out la-dark">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="loader-title">Normal (.la-dark)</div>
+                </div>
+                <div class="loader">
+                    <div class="la-line-scale-pulse-out la-dark la-lg">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="loader-title">Large (.la-dark .la-lg)</div>
+                </div>
+                <div class="loader">
+                    <div class="la-line-scale-pulse-out la-dark la-2x">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="loader-title">Extra Large (.la-dark .la-2x)</div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <main class="configuration">
+        <h2>Usage</h2>
+        <h3>HTML</h3>
+        <pre><code class="language-markup">&lt;div class="la-line-scale-pulse-out"&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        <h3>CSS
+            <sup>**</sup>
+        </h3>
+        <pre><code class="language-css">.la-line-scale-pulse-out {
+    position: relative;
+}
+.la-line-scale-pulse-out &gt; div {
+    position: relative;
+    box-sizing: content-box;
+    color: #fff;
+    background: #fff;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0;
+}
+.la-line-scale-pulse-out:after {
+    display: table;
+    clear: both;
+    line-height: 0;
+    content: "";
+}
+.la-line-scale-pulse-out.la-dark &gt; div {
+    color: #444;
+    background: #444;
+    border-color: #444;
+}
+.la-line-scale-pulse-out {
+    height: 32px;
+}
+.la-line-scale-pulse-out &gt; div {
+    display: inline-block;
+    float: left;
+    width: 4px;
+    height: 32px;
+    margin: 2px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 0;
+    animation: line-scale-pulse-out .9s infinite cubic-bezier(.85, .25, .37, .85);
+}
+.la-line-scale-pulse-out &gt; div:nth-child(3) {
+    animation-delay: -.9s;
+}
+.la-line-scale-pulse-out &gt; div:nth-child(2),
+.la-line-scale-pulse-out &gt; div:nth-child(4) {
+    animation-delay: -.7s;
+}
+.la-line-scale-pulse-out &gt; div:nth-child(1),
+.la-line-scale-pulse-out &gt; div:nth-child(5) {
+    animation-delay: -.5s;
+}
+.la-line-scale-pulse-out.la-sm {
+    height: 16px;
+}
+.la-line-scale-pulse-out.la-sm &gt; div {
+    width: 2px;
+    height: 16px;
+    margin: 1px;
+}
+.la-line-scale-pulse-out.la-lg {
+    height: 48px;
+}
+.la-line-scale-pulse-out.la-lg &gt; div {
+    width: 6px;
+    height: 48px;
+    margin: 3px;
+}
+.la-line-scale-pulse-out.la-2x {
+    height: 64px;
+}
+.la-line-scale-pulse-out.la-2x &gt; div {
+    width: 8px;
+    height: 64px;
+    margin: 4px;
+}
+/*
+ * Animation
+ */
+@keyframes line-scale-pulse-out {
+    0% {
+        transform: scaley(1);
+    }
+    50% {
+        transform: scaley(.3);
+    }
+    100% {
+        transform: scaley(1);
+    }
+}</code></pre>
+        <p>**
+            <i>Note:</i> If you copy this code, you may need to add vendor prefixes for better browser compatibility. If you download our package, the CSS files are fully compatible.</p>
+    </main>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/script.js"></script>
+</body>
+</html>

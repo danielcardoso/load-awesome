@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Square Jelly Box » Load Awesome</title>
+    <meta name="description" content="An awesome collection of Loaders and Spinners. Delightful and performance-focused Pure CSS animations">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/loaders.css" />
+</head>
+<body style="background-color: #79bbb5; color: #79bbb5;">
+    <header class="absolute">
+        <div class="header-container">
+            <div class="left">
+                <h1>Square Jelly Box
+                    <span>Awesome</span>
+                </h1>
+            </div>
+            <div class="right text-right">
+                <span class="btngroup">
+                    <a href="./" class="btn btn-circle">View All</a>
+                </span>
+            </div>
+            <div class="cf"></div>
+        </div>
+    </header>
+    <main>
+        <div class="loaders showroom">
+            <div class="loader">
+                <div class="la-square-jelly-box la-sm">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="loader-title">Small (.la-sm)</div>
+            </div>
+            <div class="loader">
+                <div class="la-square-jelly-box">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="loader-title">Normal</div>
+            </div>
+            <div class="loader">
+                <div class="la-square-jelly-box la-lg">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="loader-title">Large (.la-lg)</div>
+            </div>
+            <div class="loader">
+                <div class="la-square-jelly-box la-2x">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="loader-title">Extra Large (.la-2x)</div>
+            </div>
+        </div>
+    </main>
+    <div class="bg-light">
+        <main class="small">
+            <div class="loaders showroom">
+                <div class="loader">
+                    <div class="la-square-jelly-box la-dark la-sm">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="loader-title">Small (.la-dark .la-sm)</div>
+                </div>
+                <div class="loader">
+                    <div class="la-square-jelly-box la-dark">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="loader-title">Normal (.la-dark)</div>
+                </div>
+                <div class="loader">
+                    <div class="la-square-jelly-box la-dark la-lg">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="loader-title">Large (.la-dark .la-lg)</div>
+                </div>
+                <div class="loader">
+                    <div class="la-square-jelly-box la-dark la-2x">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="loader-title">Extra Large (.la-dark .la-2x)</div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <main class="configuration">
+        <h2>Usage</h2>
+        <h3>HTML</h3>
+        <pre><code class="language-markup">&lt;div class="la-square-jelly-box"&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        <h3>CSS
+            <sup>**</sup>
+        </h3>
+        <pre><code class="language-css">.la-square-jelly-box {
+    position: relative;
+}
+.la-square-jelly-box &gt; div {
+    position: relative;
+    box-sizing: content-box;
+    color: #fff;
+    background: #fff;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0;
+}
+.la-square-jelly-box:after {
+    display: table;
+    clear: both;
+    line-height: 0;
+    content: "";
+}
+.la-square-jelly-box.la-dark &gt; div {
+    color: #444;
+    background: #444;
+    border-color: #444;
+}
+.la-square-jelly-box {
+    width: 32px;
+    height: 32px;
+}
+.la-square-jelly-box &gt; div:nth-child(1) {
+    position: absolute;
+    top: -25%;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    animation: square-jelly-box-animate .6s linear infinite;
+}
+.la-square-jelly-box &gt; div:nth-child(2) {
+    position: absolute;
+    bottom: -9%;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background: rgba(0, 0, 0, .2);
+    border-radius: 50%;
+    animation: square-jelly-box-shadow .6s linear infinite;
+}
+.la-square-jelly-box.la-sm {
+    width: 16px;
+    height: 16px;
+}
+.la-square-jelly-box.la-lg {
+    width: 48px;
+    height: 48px;
+}
+.la-square-jelly-box.la-2x {
+    width: 64px;
+    height: 64px;
+}
+/*
+ * Animations
+ */
+@keyframes square-jelly-box-animate {
+    17% {
+        border-bottom-right-radius: 10%;
+    }
+    25% {
+        transform: translateY(25%) rotate(22.5deg);
+    }
+    50% {
+        border-bottom-right-radius: 100%;
+        transform: translateY(50%) scale(1, .9) rotate(45deg);
+    }
+    75% {
+        transform: translateY(25%) rotate(67.5deg);
+    }
+    100% {
+        transform: translateY(0) rotate(90deg);
+    }
+}
+@keyframes square-jelly-box-shadow {
+    50% {
+        transform: scale(1.25, 1);
+    }
+}</code></pre>
+        <p>**
+            <i>Note:</i> If you copy this code, you may need to add vendor prefixes for better browser compatibility. If you download our package, the CSS files are fully compatible.</p>
+    </main>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/script.js"></script>
+</body>
+</html>

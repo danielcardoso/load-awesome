@@ -1,0 +1,133 @@
+/*!
+ * Load Awesome v0.1.0 (http://github.danielcardoso.net/load-awesome/)
+ * Copyright 2015 Daniel Cardoso <@DanielCardoso>
+ * Licensed under MIT
+ */
+.la-ball-elastic-dots {
+    position: relative;
+}
+.la-ball-elastic-dots > div {
+    position: relative;
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+    color: #fff;
+    background: #fff;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0;
+}
+.la-ball-elastic-dots:after {
+    display: table;
+    clear: both;
+    line-height: 0;
+    content: "";
+}
+.la-ball-elastic-dots.la-dark > div {
+    color: #444;
+    background: #444;
+    border-color: #444;
+}
+
+.la-ball-elastic-dots {
+    width: 120px;
+    height: 10px;
+    font-size: 0;
+    text-align: center;
+}
+.la-ball-elastic-dots > div {
+    display: inline-block;
+    float: none;
+    width: 10px;
+    height: 10px;
+    white-space: nowrap;
+    border-radius: 100%;
+    -webkit-animation: ball-elastic-dots-anim 1s infinite;
+       -moz-animation: ball-elastic-dots-anim 1s infinite;
+         -o-animation: ball-elastic-dots-anim 1s infinite;
+            animation: ball-elastic-dots-anim 1s infinite;
+}
+.la-ball-elastic-dots.la-sm {
+    width: 60px;
+    height: 5px;
+}
+.la-ball-elastic-dots.la-sm > div {
+    width: 5px;
+    height: 5px;
+}
+.la-ball-elastic-dots.la-lg {
+    width: 180px;
+    height: 15px;
+}
+.la-ball-elastic-dots.la-lg > div {
+    width: 15px;
+    height: 15px;
+}
+.la-ball-elastic-dots.la-2x {
+    width: 240px;
+    height: 20px;
+}
+.la-ball-elastic-dots.la-2x > div {
+    width: 20px;
+    height: 20px;
+}
+
+/*
+ * Animation
+ */
+@-webkit-keyframes ball-elastic-dots-anim {
+    0%,
+    100% {
+        margin: 0;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+    50% {
+        margin: 0 5%;
+        -webkit-transform: scale(.65);
+                transform: scale(.65);
+    }
+}
+@-moz-keyframes ball-elastic-dots-anim {
+    0%,
+    100% {
+        margin: 0;
+        -moz-transform: scale(1);
+             transform: scale(1);
+    }
+    50% {
+        margin: 0 5%;
+        -moz-transform: scale(.65);
+             transform: scale(.65);
+    }
+}
+@-o-keyframes ball-elastic-dots-anim {
+    0%,
+    100% {
+        margin: 0;
+        -o-transform: scale(1);
+           transform: scale(1);
+    }
+    50% {
+        margin: 0 5%;
+        -o-transform: scale(.65);
+           transform: scale(.65);
+    }
+}
+@keyframes ball-elastic-dots-anim {
+    0%,
+    100% {
+        margin: 0;
+        -webkit-transform: scale(1);
+           -moz-transform: scale(1);
+             -o-transform: scale(1);
+                transform: scale(1);
+    }
+    50% {
+        margin: 0 5%;
+        -webkit-transform: scale(.65);
+           -moz-transform: scale(.65);
+             -o-transform: scale(.65);
+                transform: scale(.65);
+    }
+}

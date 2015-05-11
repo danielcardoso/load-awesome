@@ -1,0 +1,145 @@
+/*!
+ * Load Awesome v0.1.0 (http://github.danielcardoso.net/load-awesome/)
+ * Copyright 2015 Daniel Cardoso <@DanielCardoso>
+ * Licensed under MIT
+ */
+.la-ball-pulse-vertical {
+    position: relative;
+}
+.la-ball-pulse-vertical > div {
+    position: relative;
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+    color: #fff;
+    background: #fff;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0;
+}
+.la-ball-pulse-vertical:after {
+    display: table;
+    clear: both;
+    line-height: 0;
+    content: "";
+}
+.la-ball-pulse-vertical.la-dark > div {
+    color: #444;
+    background: #444;
+    border-color: #444;
+}
+
+/*
+ * Animation
+ */
+@-webkit-keyframes ball-pulse-vertical {
+    20% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+    70% {
+        opacity: .1;
+        -webkit-transform: scale(.01);
+                transform: scale(.01);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+@-moz-keyframes ball-pulse-vertical {
+    20% {
+        opacity: 1;
+        -moz-transform: scale(1);
+             transform: scale(1);
+    }
+    70% {
+        opacity: .1;
+        -moz-transform: scale(.01);
+             transform: scale(.01);
+    }
+    100% {
+        opacity: 1;
+        -moz-transform: scale(1);
+             transform: scale(1);
+    }
+}
+@-o-keyframes ball-pulse-vertical {
+    20% {
+        opacity: 1;
+        -o-transform: scale(1);
+           transform: scale(1);
+    }
+    70% {
+        opacity: .1;
+        -o-transform: scale(.01);
+           transform: scale(.01);
+    }
+    100% {
+        opacity: 1;
+        -o-transform: scale(1);
+           transform: scale(1);
+    }
+}
+@keyframes ball-pulse-vertical {
+    20% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+           -moz-transform: scale(1);
+             -o-transform: scale(1);
+                transform: scale(1);
+    }
+    70% {
+        opacity: .1;
+        -webkit-transform: scale(.01);
+           -moz-transform: scale(.01);
+             -o-transform: scale(.01);
+                transform: scale(.01);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+           -moz-transform: scale(1);
+             -o-transform: scale(1);
+                transform: scale(1);
+    }
+}
+.la-ball-pulse-vertical > div:nth-child(1) {
+    -webkit-animation: ball-pulse-vertical 750ms ease infinite;
+       -moz-animation: ball-pulse-vertical 750ms ease infinite;
+         -o-animation: ball-pulse-vertical 750ms ease infinite;
+            animation: ball-pulse-vertical 750ms ease infinite;
+    -webkit-animation-delay: -525ms;
+       -moz-animation-delay: -525ms;
+         -o-animation-delay: -525ms;
+            animation-delay: -525ms;
+}
+.la-ball-pulse-vertical > div:nth-child(2) {
+    -webkit-animation: ball-pulse-vertical 750ms ease infinite;
+       -moz-animation: ball-pulse-vertical 750ms ease infinite;
+         -o-animation: ball-pulse-vertical 750ms ease infinite;
+            animation: ball-pulse-vertical 750ms ease infinite;
+    -webkit-animation-delay: -450ms;
+       -moz-animation-delay: -450ms;
+         -o-animation-delay: -450ms;
+            animation-delay: -450ms;
+}
+.la-ball-pulse-vertical > div:nth-child(3) {
+    -webkit-animation: ball-pulse-vertical 750ms ease infinite;
+       -moz-animation: ball-pulse-vertical 750ms ease infinite;
+         -o-animation: ball-pulse-vertical 750ms ease infinite;
+            animation: ball-pulse-vertical 750ms ease infinite;
+    -webkit-animation-delay: -375ms;
+       -moz-animation-delay: -375ms;
+         -o-animation-delay: -375ms;
+            animation-delay: -375ms;
+}
+.la-ball-pulse-vertical > div {
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin: 2px;
+    border-radius: 100%;
+}

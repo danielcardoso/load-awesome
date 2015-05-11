@@ -1,0 +1,188 @@
+/*!
+ * Load Awesome v0.1.0 (http://github.danielcardoso.net/load-awesome/)
+ * Copyright 2015 Daniel Cardoso <@DanielCardoso>
+ * Licensed under MIT
+ */
+.la-ball-clip-rotate-multiple {
+    position: relative;
+}
+.la-ball-clip-rotate-multiple > div {
+    position: relative;
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+    color: #fff;
+    background: #fff;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0;
+}
+.la-ball-clip-rotate-multiple:after {
+    display: table;
+    clear: both;
+    line-height: 0;
+    content: "";
+}
+.la-ball-clip-rotate-multiple.la-dark > div {
+    color: #444;
+    background: #444;
+    border-color: #444;
+}
+
+.la-ball-clip-rotate-multiple {
+    width: 32px;
+    height: 32px;
+}
+.la-ball-clip-rotate-multiple > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent !important;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 100%;
+    -webkit-animation: ball-clip-rotate-multiple-rotate 1s ease-in-out infinite;
+       -moz-animation: ball-clip-rotate-multiple-rotate 1s ease-in-out infinite;
+         -o-animation: ball-clip-rotate-multiple-rotate 1s ease-in-out infinite;
+            animation: ball-clip-rotate-multiple-rotate 1s ease-in-out infinite;
+}
+.la-ball-clip-rotate-multiple > div:first-child {
+    top: 7px;
+    left: 7px;
+    width: 14px;
+    height: 14px;
+    border-top-color: transparent !important;
+    border-bottom-color: transparent !important;
+    -webkit-animation-duration: .5s;
+       -moz-animation-duration: .5s;
+         -o-animation-duration: .5s;
+            animation-duration: .5s;
+    -webkit-animation-direction: reverse;
+       -moz-animation-direction: reverse;
+         -o-animation-direction: reverse;
+            animation-direction: reverse;
+}
+.la-ball-clip-rotate-multiple > div:last-child {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-right-color: transparent !important;
+    border-left-color: transparent !important;
+}
+.la-ball-clip-rotate-multiple.la-sm {
+    width: 16px;
+    height: 16px;
+}
+.la-ball-clip-rotate-multiple.la-sm > div {
+    border-width: 1px;
+}
+.la-ball-clip-rotate-multiple.la-sm > div:first-child {
+    top: 4px;
+    left: 4px;
+    width: 6px;
+    height: 6px;
+}
+.la-ball-clip-rotate-multiple.la-sm > div:last-child {
+    width: 14px;
+    height: 14px;
+}
+.la-ball-clip-rotate-multiple.la-lg {
+    width: 48px;
+    height: 48px;
+}
+.la-ball-clip-rotate-multiple.la-lg > div {
+    border-width: 3px;
+}
+.la-ball-clip-rotate-multiple.la-lg > div:first-child {
+    top: 11px;
+    left: 11px;
+    width: 20px;
+    height: 20px;
+}
+.la-ball-clip-rotate-multiple.la-lg > div:last-child {
+    width: 42px;
+    height: 42px;
+}
+.la-ball-clip-rotate-multiple.la-2x {
+    width: 64px;
+    height: 64px;
+}
+.la-ball-clip-rotate-multiple.la-2x > div {
+    border-width: 4px;
+}
+.la-ball-clip-rotate-multiple.la-2x > div:first-child {
+    top: 14px;
+    left: 14px;
+    width: 28px;
+    height: 28px;
+}
+.la-ball-clip-rotate-multiple.la-2x > div:last-child {
+    width: 56px;
+    height: 56px;
+}
+
+/*
+ * Animation
+ */
+@-webkit-keyframes ball-clip-rotate-multiple-rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+@-moz-keyframes ball-clip-rotate-multiple-rotate {
+    0% {
+        -moz-transform: rotate(0deg);
+             transform: rotate(0deg);
+    }
+    50% {
+        -moz-transform: rotate(180deg);
+             transform: rotate(180deg);
+    }
+    100% {
+        -moz-transform: rotate(360deg);
+             transform: rotate(360deg);
+    }
+}
+@-o-keyframes ball-clip-rotate-multiple-rotate {
+    0% {
+        -o-transform: rotate(0deg);
+           transform: rotate(0deg);
+    }
+    50% {
+        -o-transform: rotate(180deg);
+           transform: rotate(180deg);
+    }
+    100% {
+        -o-transform: rotate(360deg);
+           transform: rotate(360deg);
+    }
+}
+@keyframes ball-clip-rotate-multiple-rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+           -moz-transform: rotate(0deg);
+             -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+           -moz-transform: rotate(180deg);
+             -o-transform: rotate(180deg);
+                transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+           -moz-transform: rotate(360deg);
+             -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
