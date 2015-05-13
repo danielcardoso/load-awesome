@@ -48,22 +48,22 @@
             animation: ball-fall 1s ease-in-out infinite;
 }
 .la-ball-fall > div:nth-child(1) {
+    -webkit-animation-delay: -200ms;
+       -moz-animation-delay: -200ms;
+         -o-animation-delay: -200ms;
+            animation-delay: -200ms;
+}
+.la-ball-fall > div:nth-child(2) {
+    -webkit-animation-delay: -100ms;
+       -moz-animation-delay: -100ms;
+         -o-animation-delay: -100ms;
+            animation-delay: -100ms;
+}
+.la-ball-fall > div:nth-child(3) {
     -webkit-animation-delay: 0ms;
        -moz-animation-delay: 0ms;
          -o-animation-delay: 0ms;
             animation-delay: 0ms;
-}
-.la-ball-fall > div:nth-child(2) {
-    -webkit-animation-delay: 100ms;
-       -moz-animation-delay: 100ms;
-         -o-animation-delay: 100ms;
-            animation-delay: 100ms;
-}
-.la-ball-fall > div:nth-child(3) {
-    -webkit-animation-delay: 200ms;
-       -moz-animation-delay: 200ms;
-         -o-animation-delay: 200ms;
-            animation-delay: 200ms;
 }
 .la-ball-fall.la-sm {
     height: 11px;

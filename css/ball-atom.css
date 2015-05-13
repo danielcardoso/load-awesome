@@ -130,7 +130,7 @@
     width: 16px;
     height: 16px;
 }
-.la-ball-atom.la-sm > div:before {
+.la-ball-atom.la-sm > div:not(:nth-child(1)):before {
     width: 5px;
     height: 5px;
     margin-top: -3px;
@@ -140,7 +140,7 @@
     width: 48px;
     height: 48px;
 }
-.la-ball-atom.la-lg > div:before {
+.la-ball-atom.la-lg > div:not(:nth-child(1)):before {
     width: 15px;
     height: 15px;
     margin-top: -8px;
@@ -150,7 +150,7 @@
     width: 64px;
     height: 64px;
 }
-.la-ball-atom.la-2x > div:before {
+.la-ball-atom.la-2x > div:not(:nth-child(1)):before {
     width: 20px;
     height: 20px;
     margin-top: -10px;

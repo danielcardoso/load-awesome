@@ -34,28 +34,28 @@
     height: 32px;
 }
 .la-pacman > div:nth-child(3) {
-    -webkit-animation: pacman-balls 1s 350ms infinite linear;
-       -moz-animation: pacman-balls 1s 350ms infinite linear;
-         -o-animation: pacman-balls 1s 350ms infinite linear;
-            animation: pacman-balls 1s 350ms infinite linear;
+    -webkit-animation: pacman-balls 1s .1s infinite linear;
+       -moz-animation: pacman-balls 1s .1s infinite linear;
+         -o-animation: pacman-balls 1s .1s infinite linear;
+            animation: pacman-balls 1s .1s infinite linear;
 }
 .la-pacman > div:nth-child(4) {
-    -webkit-animation: pacman-balls 1s 100ms infinite linear;
-       -moz-animation: pacman-balls 1s 100ms infinite linear;
-         -o-animation: pacman-balls 1s 100ms infinite linear;
-            animation: pacman-balls 1s 100ms infinite linear;
+    -webkit-animation: pacman-balls 1s .35s infinite linear;
+       -moz-animation: pacman-balls 1s .35s infinite linear;
+         -o-animation: pacman-balls 1s .35s infinite linear;
+            animation: pacman-balls 1s .35s infinite linear;
 }
 .la-pacman > div:nth-child(5) {
-    -webkit-animation: pacman-balls 1s -150ms infinite linear;
-       -moz-animation: pacman-balls 1s -150ms infinite linear;
-         -o-animation: pacman-balls 1s -150ms infinite linear;
-            animation: pacman-balls 1s -150ms infinite linear;
+    -webkit-animation: pacman-balls 1s .6s infinite linear;
+       -moz-animation: pacman-balls 1s .6s infinite linear;
+         -o-animation: pacman-balls 1s .6s infinite linear;
+            animation: pacman-balls 1s .6s infinite linear;
 }
 .la-pacman > div:nth-child(6) {
-    -webkit-animation: pacman-balls 1s -400ms infinite linear;
-       -moz-animation: pacman-balls 1s -400ms infinite linear;
-         -o-animation: pacman-balls 1s -400ms infinite linear;
-            animation: pacman-balls 1s -400ms infinite linear;
+    -webkit-animation: pacman-balls 1s .85s infinite linear;
+       -moz-animation: pacman-balls 1s .85s infinite linear;
+         -o-animation: pacman-balls 1s .85s infinite linear;
+            animation: pacman-balls 1s .85s infinite linear;
 }
 .la-pacman > div:first-of-type {
     width: 0;
@@ -94,9 +94,12 @@
     float: left;
     width: 8px;
     height: 8px;
-    margin: 2px;
     border-radius: 100%;
     opacity: 0;
+}
+.la-pacman.la-sm {
+    width: 16px;
+    height: 16px;
 }
 .la-pacman.la-sm > div:first-of-type {
     border-width: 8px;
@@ -111,7 +114,10 @@
 .la-pacman.la-sm > div:nth-child(6) {
     width: 4px;
     height: 4px;
-    margin: 1px;
+}
+.la-pacman.la-lg {
+    width: 48px;
+    height: 48px;
 }
 .la-pacman.la-lg > div:first-of-type {
     border-width: 24px;
@@ -126,7 +132,10 @@
 .la-pacman.la-lg > div:nth-child(6) {
     width: 12px;
     height: 12px;
-    margin: 3px;
+}
+.la-pacman.la-2x {
+    width: 64px;
+    height: 64px;
 }
 .la-pacman.la-2x > div:first-of-type {
     border-width: 32px;
@@ -141,7 +150,6 @@
 .la-pacman.la-2x > div:nth-child(6) {
     width: 16px;
     height: 16px;
-    margin: 4px;
 }
 
 /*
