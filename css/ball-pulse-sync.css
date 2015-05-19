@@ -19,8 +19,8 @@
 }
 .la-ball-pulse-sync:after {
     display: table;
-    clear: both;
     line-height: 0;
+    clear: both;
     content: "";
 }
 .la-ball-pulse-sync.la-dark > div {
@@ -31,10 +31,10 @@
 
 .la-ball-pulse-sync > div {
     display: inline-block;
-    float: left;
     width: 10px;
     height: 10px;
     margin: 6px;
+    float: left;
     border-radius: 100%;
     -webkit-animation: ball-pulse-sync .6s infinite ease-in-out;
        -moz-animation: ball-pulse-sync .6s infinite ease-in-out;

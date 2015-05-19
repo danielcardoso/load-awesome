@@ -19,8 +19,8 @@
 }
 .la-ball-spin:after {
     display: table;
-    clear: both;
     line-height: 0;
+    clear: both;
     content: "";
 }
 .la-ball-spin.la-dark > div {
@@ -37,11 +37,11 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    float: left;
     width: 8px;
     height: 8px;
     margin-top: -4px;
     margin-left: -4px;
+    float: left;
     border-radius: 100%;
     -webkit-animation: ball-spin 1s infinite ease-in-out;
        -moz-animation: ball-spin 1s infinite ease-in-out;

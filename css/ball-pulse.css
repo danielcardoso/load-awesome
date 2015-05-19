@@ -19,8 +19,8 @@
 }
 .la-ball-pulse:after {
     display: table;
-    clear: both;
     line-height: 0;
+    clear: both;
     content: "";
 }
 .la-ball-pulse.la-dark > div {
@@ -138,10 +138,10 @@
 }
 .la-ball-pulse > div {
     display: inline-block;
-    float: left;
     width: 10px;
     height: 10px;
     margin: 6px;
+    float: left;
     border-radius: 100%;
 }
 .la-ball-pulse.la-sm > div {

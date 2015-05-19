@@ -19,8 +19,8 @@
 }
 .la-square-spin:after {
     display: table;
-    clear: both;
     line-height: 0;
+    clear: both;
     content: "";
 }
 .la-square-spin.la-dark > div {
@@ -34,10 +34,10 @@
     height: 32px;
 }
 .la-square-spin > div {
-    float: left;
     width: 32px;
     height: 32px;
     margin: 2px;
+    float: left;
     border-radius: 0;
     -webkit-animation: square-spin 3s 0s cubic-bezier(.09, .57, .49, .9) infinite;
        -moz-animation: square-spin 3s 0s cubic-bezier(.09, .57, .49, .9) infinite;

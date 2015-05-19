@@ -19,8 +19,8 @@
 }
 .la-ball-triangle-path:after {
     display: table;
-    clear: both;
     line-height: 0;
+    clear: both;
     content: "";
 }
 .la-ball-triangle-path.la-dark > div {
@@ -35,9 +35,9 @@
 }
 .la-ball-triangle-path > div {
     position: absolute;
-    float: left;
     width: 10px;
     height: 10px;
+    float: left;
     border-radius: 100%;
 }
 .la-ball-triangle-path > div:nth-child(1) {

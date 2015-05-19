@@ -19,8 +19,8 @@
 }
 .la-ball-8bits:after {
     display: table;
-    clear: both;
     line-height: 0;
+    clear: both;
     content: "";
 }
 .la-ball-8bits.la-dark > div {
@@ -37,9 +37,9 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    float: left;
     width: 4px;
     height: 4px;
+    float: left;
     border-radius: 0;
     opacity: 0;
     -webkit-transform: translate(100%, 100%);

@@ -19,8 +19,8 @@
 }
 .la-ball-clip-rotate-pulse:after {
     display: table;
-    clear: both;
     line-height: 0;
+    clear: both;
     content: "";
 }
 .la-ball-clip-rotate-pulse.la-dark > div {

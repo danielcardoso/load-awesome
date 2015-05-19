@@ -19,8 +19,8 @@
 }
 .la-line-spin-fade:after {
     display: table;
-    clear: both;
     line-height: 0;
+    clear: both;
     content: "";
 }
 .la-line-spin-fade.la-dark > div {
@@ -35,12 +35,12 @@
 }
 .la-line-spin-fade > div {
     position: absolute;
-    float: left;
     width: 2px;
     height: 10px;
     margin: 2px;
     margin-top: -5px;
     margin-left: -1px;
+    float: left;
     border-radius: 0;
     -webkit-animation: line-spin-fade 1s infinite ease-in-out;
        -moz-animation: line-spin-fade 1s infinite ease-in-out;

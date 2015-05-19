@@ -19,8 +19,8 @@
 }
 .la-ball-pulse-vertical:after {
     display: table;
-    clear: both;
     line-height: 0;
+    clear: both;
     content: "";
 }
 .la-ball-pulse-vertical.la-dark > div {
@@ -137,9 +137,9 @@
             animation-delay: -375ms;
 }
 .la-ball-pulse-vertical > div {
-    float: left;
     width: 10px;
     height: 10px;
     margin: 2px;
+    float: left;
     border-radius: 100%;
 }

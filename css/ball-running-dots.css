@@ -19,8 +19,8 @@
 }
 .la-ball-running-dots:after {
     display: table;
-    clear: both;
     line-height: 0;
+    clear: both;
     content: "";
 }
 .la-ball-running-dots.la-dark > div {
@@ -35,10 +35,10 @@
 }
 .la-ball-running-dots > div {
     position: absolute;
-    float: left;
     width: 10px;
     height: 10px;
     margin-left: -25px;
+    float: left;
     border-radius: 100%;
     -webkit-animation: ball-running-dots-animate 2s linear infinite;
        -moz-animation: ball-running-dots-animate 2s linear infinite;

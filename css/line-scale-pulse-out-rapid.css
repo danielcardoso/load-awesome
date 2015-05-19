@@ -19,8 +19,8 @@
 }
 .la-line-scale-pulse-out-rapid:after {
     display: table;
-    clear: both;
     line-height: 0;
+    clear: both;
     content: "";
 }
 .la-line-scale-pulse-out-rapid.la-dark > div {
@@ -34,12 +34,12 @@
 }
 .la-line-scale-pulse-out-rapid > div {
     display: inline-block;
-    float: left;
     width: 4px;
     height: 32px;
     margin: 2px;
     margin-top: 0;
     margin-bottom: 0;
+    float: left;
     border-radius: 0;
     -webkit-animation: line-scale-pulse-out-rapid .9s infinite cubic-bezier(.11, .49, .38, .78);
        -moz-animation: line-scale-pulse-out-rapid .9s infinite cubic-bezier(.11, .49, .38, .78);

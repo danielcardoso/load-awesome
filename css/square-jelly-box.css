@@ -19,8 +19,8 @@
 }
 .la-square-jelly-box:after {
     display: table;
-    clear: both;
     line-height: 0;
+    clear: both;
     content: "";
 }
 .la-square-jelly-box.la-dark > div {

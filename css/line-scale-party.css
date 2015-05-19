@@ -19,8 +19,8 @@
 }
 .la-line-scale-party:after {
     display: table;
-    clear: both;
     line-height: 0;
+    clear: both;
     content: "";
 }
 .la-line-scale-party.la-dark > div {
@@ -34,12 +34,12 @@
 }
 .la-line-scale-party > div {
     display: inline-block;
-    float: left;
     width: 4px;
     height: 32px;
     margin: 2px;
     margin-top: 0;
     margin-bottom: 0;
+    float: left;
     border-radius: 0;
     -webkit-animation-name: line-scale-party;
        -moz-animation-name: line-scale-party;
@@ -55,54 +55,54 @@
             animation-iteration-count: infinite;
 }
 .la-line-scale-party > div:nth-child(1) {
-    -webkit-animation-duration: .63s;
-       -moz-animation-duration: .63s;
-         -o-animation-duration: .63s;
-            animation-duration: .63s;
-    -webkit-animation-delay: -.29s;
-       -moz-animation-delay: -.29s;
-         -o-animation-delay: -.29s;
-            animation-delay: -.29s;
-}
-.la-line-scale-party > div:nth-child(2) {
-    -webkit-animation-duration: .43s;
-       -moz-animation-duration: .43s;
-         -o-animation-duration: .43s;
-            animation-duration: .43s;
-    -webkit-animation-delay: -.28s;
-       -moz-animation-delay: -.28s;
-         -o-animation-delay: -.28s;
-            animation-delay: -.28s;
-}
-.la-line-scale-party > div:nth-child(3) {
-    -webkit-animation-duration: .6s;
-       -moz-animation-duration: .6s;
-         -o-animation-duration: .6s;
-            animation-duration: .6s;
+    -webkit-animation-duration: .45s;
+       -moz-animation-duration: .45s;
+         -o-animation-duration: .45s;
+            animation-duration: .45s;
     -webkit-animation-delay: -.22s;
        -moz-animation-delay: -.22s;
          -o-animation-delay: -.22s;
             animation-delay: -.22s;
 }
+.la-line-scale-party > div:nth-child(2) {
+    -webkit-animation-duration: .53s;
+       -moz-animation-duration: .53s;
+         -o-animation-duration: .53s;
+            animation-duration: .53s;
+    -webkit-animation-delay: -.31s;
+       -moz-animation-delay: -.31s;
+         -o-animation-delay: -.31s;
+            animation-delay: -.31s;
+}
+.la-line-scale-party > div:nth-child(3) {
+    -webkit-animation-duration: .66s;
+       -moz-animation-duration: .66s;
+         -o-animation-duration: .66s;
+            animation-duration: .66s;
+    -webkit-animation-delay: -.21s;
+       -moz-animation-delay: -.21s;
+         -o-animation-delay: -.21s;
+            animation-delay: -.21s;
+}
 .la-line-scale-party > div:nth-child(4) {
-    -webkit-animation-duration: .88s;
-       -moz-animation-duration: .88s;
-         -o-animation-duration: .88s;
-            animation-duration: .88s;
-    -webkit-animation-delay: -.39s;
-       -moz-animation-delay: -.39s;
-         -o-animation-delay: -.39s;
-            animation-delay: -.39s;
+    -webkit-animation-duration: .66s;
+       -moz-animation-duration: .66s;
+         -o-animation-duration: .66s;
+            animation-duration: .66s;
+    -webkit-animation-delay: -.46s;
+       -moz-animation-delay: -.46s;
+         -o-animation-delay: -.46s;
+            animation-delay: -.46s;
 }
 .la-line-scale-party > div:nth-child(5) {
-    -webkit-animation-duration: .75s;
-       -moz-animation-duration: .75s;
-         -o-animation-duration: .75s;
-            animation-duration: .75s;
-    -webkit-animation-delay: -.66s;
-       -moz-animation-delay: -.66s;
-         -o-animation-delay: -.66s;
-            animation-delay: -.66s;
+    -webkit-animation-duration: .72s;
+       -moz-animation-duration: .72s;
+         -o-animation-duration: .72s;
+            animation-duration: .72s;
+    -webkit-animation-delay: -.67s;
+       -moz-animation-delay: -.67s;
+         -o-animation-delay: -.67s;
+            animation-delay: -.67s;
 }
 .la-line-scale-party.la-sm {
     height: 16px;

@@ -19,8 +19,8 @@
 }
 .la-cube-transition:after {
     display: table;
-    clear: both;
     line-height: 0;
+    clear: both;
     content: "";
 }
 .la-cube-transition.la-dark > div {
@@ -37,11 +37,11 @@
     position: absolute;
     top: 0;
     left: 0;
-    float: left;
     width: 14px;
     height: 14px;
     margin-top: -7px;
     margin-left: -7px;
+    float: left;
     border-radius: 0;
     -webkit-animation: cube-transition 1.6s 0s infinite ease-in-out;
        -moz-animation: cube-transition 1.6s 0s infinite ease-in-out;

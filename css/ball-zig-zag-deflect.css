@@ -19,8 +19,8 @@
 }
 .la-ball-zig-zag-deflect:after {
     display: table;
-    clear: both;
     line-height: 0;
+    clear: both;
     content: "";
 }
 .la-ball-zig-zag-deflect.la-dark > div {
@@ -38,11 +38,11 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    float: left;
     width: 10px;
     height: 10px;
     margin-top: -5px;
     margin-left: -5px;
+    float: left;
     border-radius: 100%;
 }
 .la-ball-zig-zag-deflect > div:first-child {

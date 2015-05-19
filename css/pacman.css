@@ -19,8 +19,8 @@
 }
 .la-pacman:after {
     display: table;
-    clear: both;
     line-height: 0;
+    clear: both;
     content: "";
 }
 .la-pacman.la-dark > div {
@@ -34,28 +34,28 @@
     height: 32px;
 }
 .la-pacman > div:nth-child(3) {
-    -webkit-animation: pacman-balls 1s .1s infinite linear;
-       -moz-animation: pacman-balls 1s .1s infinite linear;
-         -o-animation: pacman-balls 1s .1s infinite linear;
-            animation: pacman-balls 1s .1s infinite linear;
+    -webkit-animation: pacman-balls 2s .06s infinite linear;
+       -moz-animation: pacman-balls 2s .06s infinite linear;
+         -o-animation: pacman-balls 2s .06s infinite linear;
+            animation: pacman-balls 2s .06s infinite linear;
 }
 .la-pacman > div:nth-child(4) {
-    -webkit-animation: pacman-balls 1s .35s infinite linear;
-       -moz-animation: pacman-balls 1s .35s infinite linear;
-         -o-animation: pacman-balls 1s .35s infinite linear;
-            animation: pacman-balls 1s .35s infinite linear;
+    -webkit-animation: pacman-balls 2s .56s infinite linear;
+       -moz-animation: pacman-balls 2s .56s infinite linear;
+         -o-animation: pacman-balls 2s .56s infinite linear;
+            animation: pacman-balls 2s .56s infinite linear;
 }
 .la-pacman > div:nth-child(5) {
-    -webkit-animation: pacman-balls 1s .6s infinite linear;
-       -moz-animation: pacman-balls 1s .6s infinite linear;
-         -o-animation: pacman-balls 1s .6s infinite linear;
-            animation: pacman-balls 1s .6s infinite linear;
+    -webkit-animation: pacman-balls 2s 1.06s infinite linear;
+       -moz-animation: pacman-balls 2s 1.06s infinite linear;
+         -o-animation: pacman-balls 2s 1.06s infinite linear;
+            animation: pacman-balls 2s 1.06s infinite linear;
 }
 .la-pacman > div:nth-child(6) {
-    -webkit-animation: pacman-balls 1s .85s infinite linear;
-       -moz-animation: pacman-balls 1s .85s infinite linear;
-         -o-animation: pacman-balls 1s .85s infinite linear;
-            animation: pacman-balls 1s .85s infinite linear;
+    -webkit-animation: pacman-balls 2s 1.56s infinite linear;
+       -moz-animation: pacman-balls 2s 1.56s infinite linear;
+         -o-animation: pacman-balls 2s 1.56s infinite linear;
+            animation: pacman-balls 2s 1.56s infinite linear;
 }
 .la-pacman > div:first-of-type {
     width: 0;
@@ -91,9 +91,9 @@
     position: absolute;
     top: 50%;
     left: 200%;
-    float: left;
     width: 8px;
     height: 8px;
+    float: left;
     border-radius: 100%;
     opacity: 0;
 }

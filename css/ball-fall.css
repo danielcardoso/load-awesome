@@ -19,8 +19,8 @@
 }
 .la-ball-fall:after {
     display: table;
-    clear: both;
     line-height: 0;
+    clear: both;
     content: "";
 }
 .la-ball-fall.la-dark > div {
@@ -36,10 +36,10 @@
     position: relative;
     top: -20px;
     display: inline-block;
-    float: left;
     width: 10px;
     height: 10px;
     margin: 6px;
+    float: left;
     border-radius: 100%;
     opacity: 0;
     -webkit-animation: ball-fall 1s ease-in-out infinite;

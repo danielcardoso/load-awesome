@@ -19,8 +19,8 @@
 }
 .la-ball-newton-cradle:after {
     display: table;
-    clear: both;
     line-height: 0;
+    clear: both;
     content: "";
 }
 .la-ball-newton-cradle.la-dark > div {
@@ -31,9 +31,9 @@
 
 .la-ball-newton-cradle > div {
     display: inline-block;
-    float: left;
     width: 10px;
     height: 10px;
+    float: left;
     border-radius: 100%;
 }
 .la-ball-newton-cradle > div:first-child {

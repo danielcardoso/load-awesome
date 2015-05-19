@@ -19,8 +19,8 @@
 }
 .la-ball-scale:after {
     display: table;
-    clear: both;
     line-height: 0;
+    clear: both;
     content: "";
 }
 .la-ball-scale.la-dark > div {
@@ -34,9 +34,9 @@
     height: 32px;
 }
 .la-ball-scale > div {
-    float: left;
     width: 32px;
     height: 32px;
+    float: left;
     border-radius: 100%;
     opacity: 0;
     -webkit-animation: ball-scale 1s 0s ease-in-out infinite;

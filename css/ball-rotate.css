@@ -19,8 +19,8 @@
 }
 .la-ball-rotate:after {
     display: table;
-    clear: both;
     line-height: 0;
+    clear: both;
     content: "";
 }
 .la-ball-rotate.la-dark > div {
@@ -34,9 +34,9 @@
     height: 10px;
 }
 .la-ball-rotate > div {
-    float: left;
     width: 10px;
     height: 10px;
+    float: left;
     border-radius: 100%;
     -webkit-animation: ball-rotate-animation 1s cubic-bezier(.7, -.13, .22, .86) infinite;
        -moz-animation: ball-rotate-animation 1s cubic-bezier(.7, -.13, .22, .86) infinite;

@@ -19,8 +19,8 @@
 }
 .la-ball-elastic-dots:after {
     display: table;
-    clear: both;
     line-height: 0;
+    clear: both;
     content: "";
 }
 .la-ball-elastic-dots.la-dark > div {
@@ -37,10 +37,10 @@
 }
 .la-ball-elastic-dots > div {
     display: inline-block;
-    float: none;
     width: 10px;
     height: 10px;
     white-space: nowrap;
+    float: none;
     border-radius: 100%;
     -webkit-animation: ball-elastic-dots-anim 1s infinite;
        -moz-animation: ball-elastic-dots-anim 1s infinite;

@@ -19,8 +19,8 @@
 }
 .la-ball-fussion:after {
     display: table;
-    clear: both;
     line-height: 0;
+    clear: both;
     content: "";
 }
 .la-ball-fussion.la-dark > div {
@@ -35,9 +35,9 @@
 }
 .la-ball-fussion > div {
     position: absolute;
-    float: left;
     width: 12px;
     height: 12px;
+    float: left;
     border-radius: 100%;
     -webkit-transform: translate(-50%, -50%);
        -moz-transform: translate(-50%, -50%);

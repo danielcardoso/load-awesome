@@ -19,8 +19,8 @@
 }
 .la-triangle-skew-spin:after {
     display: table;
-    clear: both;
     line-height: 0;
+    clear: both;
     content: "";
 }
 .la-triangle-skew-spin.la-dark > div {

@@ -19,8 +19,8 @@
 }
 .la-ball-scale-pulse:after {
     display: table;
-    clear: both;
     line-height: 0;
+    clear: both;
     content: "";
 }
 .la-ball-scale-pulse.la-dark > div {
@@ -37,9 +37,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    float: left;
     width: 32px;
     height: 32px;
+    float: left;
     border-radius: 100%;
     opacity: .5;
     -webkit-animation: ball-scale-pulse 2.0s infinite ease-in-out;

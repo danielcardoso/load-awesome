@@ -19,8 +19,8 @@
 }
 .la-ball-atom:after {
     display: table;
-    clear: both;
     line-height: 0;
+    clear: both;
     content: "";
 }
 .la-ball-atom.la-dark > div {

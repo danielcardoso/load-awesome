@@ -19,8 +19,8 @@
 }
 .la-cog:after {
     display: table;
-    clear: both;
     line-height: 0;
+    clear: both;
     content: "";
 }
 .la-cog.la-dark > div {
@@ -34,9 +34,9 @@
     height: 33px;
 }
 .la-cog > div {
-    float: none;
     width: 29px;
     height: 29px;
+    float: none;
     background-color: transparent !important;
     border-style: dashed;
     border-width: 2px;

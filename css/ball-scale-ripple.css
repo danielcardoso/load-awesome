@@ -19,8 +19,8 @@
 }
 .la-ball-scale-ripple:after {
     display: table;
-    clear: both;
     line-height: 0;
+    clear: both;
     content: "";
 }
 .la-ball-scale-ripple.la-dark > div {
@@ -34,9 +34,9 @@
     height: 32px;
 }
 .la-ball-scale-ripple > div {
-    float: left;
     width: 28px;
     height: 28px;
+    float: left;
     background: transparent !important;
     border-width: 2px;
     border-radius: 100%;

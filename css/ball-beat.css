@@ -19,8 +19,8 @@
 }
 .la-ball-beat:after {
     display: table;
-    clear: both;
     line-height: 0;
+    clear: both;
     content: "";
 }
 .la-ball-beat.la-dark > div {
@@ -86,10 +86,10 @@
 }
 .la-ball-beat > div {
     display: inline-block;
-    float: left;
     width: 10px;
     height: 10px;
     margin: 6px;
+    float: left;
     border-radius: 100%;
     -webkit-animation: ball-beat .7s -.15s infinite linear;
        -moz-animation: ball-beat .7s -.15s infinite linear;

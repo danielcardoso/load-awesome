@@ -19,8 +19,8 @@
 }
 .la-ball-climbing-dot:after {
     display: table;
-    clear: both;
     line-height: 0;
+    clear: both;
     content: "";
 }
 .la-ball-climbing-dot.la-dark > div {
@@ -37,9 +37,9 @@
     position: absolute;
     bottom: 32%;
     left: 18%;
-    float: left;
     width: 14px;
     height: 14px;
+    float: left;
     border-radius: 100%;
     -webkit-transform-origin: center bottom;
        -moz-transform-origin: center bottom;
@@ -55,9 +55,9 @@
     position: absolute;
     top: 0;
     right: 0;
-    float: left;
     width: 14px;
     height: 2px;
+    float: left;
     border-radius: 0;
     -webkit-transform: translate(60%, 0);
        -moz-transform: translate(60%, 0);

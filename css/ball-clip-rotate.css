@@ -19,8 +19,8 @@
 }
 .la-ball-clip-rotate:after {
     display: table;
-    clear: both;
     line-height: 0;
+    clear: both;
     content: "";
 }
 .la-ball-clip-rotate.la-dark > div {
@@ -100,10 +100,10 @@
 }
 .la-ball-clip-rotate > div {
     display: inline-block;
-    float: left;
     width: 28px;
     height: 28px;
     margin: 0;
+    float: left;
     background: transparent !important;
     border-style: solid;
     border-width: 2px;
