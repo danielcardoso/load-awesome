@@ -1,6 +1,12 @@
 # [Load Awesome](http://github.danielcardoso.net/load-awesome/)
 
-An awesome collection of Loaders and Spinners. Delightful and performance-focused Pure CSS animations
+<p align="center">
+    <img src="https://img.shields.io/github/release/danielcardoso/Load-Awesome.svg?style=flat-square" />
+    <img src="https://img.shields.io/github/issues/danielcardoso/Load-Awesome.svg?style=flat-square" />
+    <img src="https://img.shields.io/bower/v/load-awesome.svg?style=flat-square" />
+</p>
+
+An awesome collection of — Pure CSS — Loaders and Spinners.
 
 
 ## Table of contents
