@@ -1,7 +1,7 @@
 {
     "name": "load-awesome",
     "description": "An awesome collection of — Pure CSS — Loaders and Spinners",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "authors": [
         "Daniel Cardoso <@DanielCardoso>"
     ],
@@ -20,6 +20,8 @@
         "dist/examples/index.html"
     ],
     "ignore": [
-        "/.*"
+        "/.*",
+        "CHANGELOG",
+        "README.md"
     ]
 }
