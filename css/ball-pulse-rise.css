@@ -1,96 +1,87 @@
 /*!
- * Load Awesome v1.0.1 (http://github.danielcardoso.net/load-awesome/)
+ * Load Awesome v1.1.0 (http://github.danielcardoso.net/load-awesome/)
  * Copyright 2015 Daniel Cardoso <@DanielCardoso>
  * Licensed under MIT
  */
-.la-ball-pulse-rise {
-    position: relative;
-}
+.la-ball-pulse-rise,
 .la-ball-pulse-rise > div {
     position: relative;
-    -webkit-box-sizing: content-box;
-       -moz-box-sizing: content-box;
-            box-sizing: content-box;
-    color: #fff;
-    background: #fff;
-    border-color: #fff;
-    border-style: solid;
-    border-width: 0;
-}
-.la-ball-pulse-rise:after {
-    display: table;
-    line-height: 0;
-    clear: both;
-    content: "";
-}
-.la-ball-pulse-rise.la-dark > div {
-    color: #444;
-    background: #444;
-    border-color: #444;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .la-ball-pulse-rise {
-    height: 14px;
+    display: block;
+    font-size: 0;
+    color: #fff;
 }
+
+.la-ball-pulse-rise.la-dark {
+    color: #333;
+}
+
 .la-ball-pulse-rise > div {
     display: inline-block;
+    float: none;
+    background-color: currentColor;
+    border: 0 solid currentColor;
+}
+
+.la-ball-pulse-rise {
+    width: 70px;
+    height: 14px;
+}
+
+.la-ball-pulse-rise > div {
     width: 10px;
     height: 10px;
     margin: 2px;
-    float: left;
     border-radius: 100%;
-    -webkit-animation-duration: 1s;
-       -moz-animation-duration: 1s;
-         -o-animation-duration: 1s;
-            animation-duration: 1s;
-    -webkit-animation-timing-function: cubic-bezier(.15, .36, .9, .6);
-       -moz-animation-timing-function: cubic-bezier(.15, .36, .9, .6);
-         -o-animation-timing-function: cubic-bezier(.15, .36, .9, .6);
-            animation-timing-function: cubic-bezier(.15, .36, .9, .6);
-    -webkit-animation-delay: 0;
-       -moz-animation-delay: 0;
-         -o-animation-delay: 0;
-            animation-delay: 0;
-    -webkit-animation-iteration-count: infinite;
-       -moz-animation-iteration-count: infinite;
-         -o-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
+    -webkit-animation: ball-pulse-rise-even 1s cubic-bezier(.15, .36, .9, .6) 0s infinite;
+       -moz-animation: ball-pulse-rise-even 1s cubic-bezier(.15, .36, .9, .6) 0s infinite;
+         -o-animation: ball-pulse-rise-even 1s cubic-bezier(.15, .36, .9, .6) 0s infinite;
+            animation: ball-pulse-rise-even 1s cubic-bezier(.15, .36, .9, .6) 0s infinite;
 }
-.la-ball-pulse-rise > div:nth-child(2n) {
-    -webkit-animation-name: ball-pulse-rise-even;
-       -moz-animation-name: ball-pulse-rise-even;
-         -o-animation-name: ball-pulse-rise-even;
-            animation-name: ball-pulse-rise-even;
-}
+
 .la-ball-pulse-rise > div:nth-child(2n-1) {
     -webkit-animation-name: ball-pulse-rise-odd;
        -moz-animation-name: ball-pulse-rise-odd;
          -o-animation-name: ball-pulse-rise-odd;
             animation-name: ball-pulse-rise-odd;
 }
+
 .la-ball-pulse-rise.la-sm {
-    height: 7px;
+    width: 34px;
+    height: 6px;
 }
+
 .la-ball-pulse-rise.la-sm > div {
-    width: 5px;
-    height: 5px;
+    width: 4px;
+    height: 4px;
     margin: 1px;
 }
-.la-ball-pulse-rise.la-lg {
-    height: 21px;
-}
-.la-ball-pulse-rise.la-lg > div {
-    width: 15px;
-    height: 15px;
-    margin: 3px;
-}
+
 .la-ball-pulse-rise.la-2x {
+    width: 140px;
     height: 28px;
 }
+
 .la-ball-pulse-rise.la-2x > div {
     width: 20px;
     height: 20px;
     margin: 4px;
+}
+
+.la-ball-pulse-rise.la-3x {
+    width: 210px;
+    height: 42px;
+}
+
+.la-ball-pulse-rise.la-3x > div {
+    width: 30px;
+    height: 30px;
+    margin: 6px;
 }
 
 /*
@@ -216,6 +207,7 @@
                 transform: scale(1);
     }
 }
+
 @-webkit-keyframes ball-pulse-rise-odd {
     0% {
         opacity: .35;
@@ -243,6 +235,7 @@
                 transform: scale(.75);
     }
 }
+
 @-moz-keyframes ball-pulse-rise-odd {
     0% {
         opacity: .35;
@@ -270,6 +263,7 @@
              transform: scale(.75);
     }
 }
+
 @-o-keyframes ball-pulse-rise-odd {
     0% {
         opacity: .35;
@@ -297,6 +291,7 @@
            transform: scale(.75);
     }
 }
+
 @keyframes ball-pulse-rise-odd {
     0% {
         opacity: .35;

@@ -1,38 +1,38 @@
 /*!
- * Load Awesome v1.0.1 (http://github.danielcardoso.net/load-awesome/)
+ * Load Awesome v1.1.0 (http://github.danielcardoso.net/load-awesome/)
  * Copyright 2015 Daniel Cardoso <@DanielCardoso>
  * Licensed under MIT
  */
-.la-line-spin-clockwise-fade {
-    position: relative;
-}
+.la-line-spin-clockwise-fade,
 .la-line-spin-clockwise-fade > div {
     position: relative;
-    -webkit-box-sizing: content-box;
-       -moz-box-sizing: content-box;
-            box-sizing: content-box;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.la-line-spin-clockwise-fade {
+    display: block;
+    font-size: 0;
     color: #fff;
-    background: #fff;
-    border-color: #fff;
-    border-style: solid;
-    border-width: 0;
 }
-.la-line-spin-clockwise-fade:after {
-    display: table;
-    line-height: 0;
-    clear: both;
-    content: "";
+
+.la-line-spin-clockwise-fade.la-dark {
+    color: #333;
 }
-.la-line-spin-clockwise-fade.la-dark > div {
-    color: #444;
-    background: #444;
-    border-color: #444;
+
+.la-line-spin-clockwise-fade > div {
+    display: inline-block;
+    float: none;
+    background-color: currentColor;
+    border: 0 solid currentColor;
 }
 
 .la-line-spin-clockwise-fade {
     width: 32px;
     height: 32px;
 }
+
 .la-line-spin-clockwise-fade > div {
     position: absolute;
     width: 2px;
@@ -40,13 +40,13 @@
     margin: 2px;
     margin-top: -5px;
     margin-left: -1px;
-    float: left;
     border-radius: 0;
-    -webkit-animation: line-spin-clockwise-fade 1.0s infinite ease-in-out;
-       -moz-animation: line-spin-clockwise-fade 1.0s infinite ease-in-out;
-         -o-animation: line-spin-clockwise-fade 1.0s infinite ease-in-out;
-            animation: line-spin-clockwise-fade 1.0s infinite ease-in-out;
+    -webkit-animation: line-spin-clockwise-fade 1s infinite ease-in-out;
+       -moz-animation: line-spin-clockwise-fade 1s infinite ease-in-out;
+         -o-animation: line-spin-clockwise-fade 1s infinite ease-in-out;
+            animation: line-spin-clockwise-fade 1s infinite ease-in-out;
 }
+
 .la-line-spin-clockwise-fade > div:nth-child(1) {
     top: 15%;
     left: 50%;
@@ -60,9 +60,10 @@
          -o-animation-delay: -.875s;
             animation-delay: -.875s;
 }
+
 .la-line-spin-clockwise-fade > div:nth-child(2) {
-    top: 25.25126%;
-    left: 74.74874%;
+    top: 25.2512626585%;
+    left: 74.7487373415%;
     -webkit-transform: rotate(45deg);
        -moz-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
@@ -73,8 +74,9 @@
          -o-animation-delay: -.75s;
             animation-delay: -.75s;
 }
+
 .la-line-spin-clockwise-fade > div:nth-child(3) {
-    top: 50.0%;
+    top: 50%;
     left: 85%;
     -webkit-transform: rotate(90deg);
        -moz-transform: rotate(90deg);
@@ -86,9 +88,10 @@
          -o-animation-delay: -.625s;
             animation-delay: -.625s;
 }
+
 .la-line-spin-clockwise-fade > div:nth-child(4) {
-    top: 74.74874%;
-    left: 74.74874%;
+    top: 74.7487373415%;
+    left: 74.7487373415%;
     -webkit-transform: rotate(135deg);
        -moz-transform: rotate(135deg);
         -ms-transform: rotate(135deg);
@@ -99,9 +102,10 @@
          -o-animation-delay: -.5s;
             animation-delay: -.5s;
 }
+
 .la-line-spin-clockwise-fade > div:nth-child(5) {
-    top: 85.0%;
-    left: 50.0%;
+    top: 84.9999999974%;
+    left: 50.0000000004%;
     -webkit-transform: rotate(180deg);
        -moz-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
@@ -112,9 +116,10 @@
          -o-animation-delay: -.375s;
             animation-delay: -.375s;
 }
+
 .la-line-spin-clockwise-fade > div:nth-child(6) {
-    top: 74.74874%;
-    left: 25.25126%;
+    top: 74.7487369862%;
+    left: 25.2512627193%;
     -webkit-transform: rotate(225deg);
        -moz-transform: rotate(225deg);
         -ms-transform: rotate(225deg);
@@ -125,9 +130,10 @@
          -o-animation-delay: -.25s;
             animation-delay: -.25s;
 }
+
 .la-line-spin-clockwise-fade > div:nth-child(7) {
-    top: 49.99998%;
-    left: 15.0%;
+    top: 49.9999806189%;
+    left: 15.0000039834%;
     -webkit-transform: rotate(270deg);
        -moz-transform: rotate(270deg);
         -ms-transform: rotate(270deg);
@@ -138,9 +144,10 @@
          -o-animation-delay: -.125s;
             animation-delay: -.125s;
 }
+
 .la-line-spin-clockwise-fade > div:nth-child(8) {
-    top: 25.25069%;
-    left: 25.2514%;
+    top: 25.2506949798%;
+    left: 25.2513989292%;
     -webkit-transform: rotate(315deg);
        -moz-transform: rotate(315deg);
         -ms-transform: rotate(315deg);
@@ -151,35 +158,41 @@
          -o-animation-delay: 0s;
             animation-delay: 0s;
 }
+
 .la-line-spin-clockwise-fade.la-sm {
     width: 16px;
     height: 16px;
 }
+
 .la-line-spin-clockwise-fade.la-sm > div {
     width: 1px;
-    height: 5px;
-    margin-top: -3px;
-    margin-left: -1px;
+    height: 4px;
+    margin-top: -2px;
+    margin-left: 0;
 }
-.la-line-spin-clockwise-fade.la-lg {
-    width: 48px;
-    height: 48px;
-}
-.la-line-spin-clockwise-fade.la-lg > div {
-    width: 3px;
-    height: 15px;
-    margin-top: -8px;
-    margin-left: -2px;
-}
+
 .la-line-spin-clockwise-fade.la-2x {
     width: 64px;
     height: 64px;
 }
+
 .la-line-spin-clockwise-fade.la-2x > div {
     width: 4px;
     height: 20px;
     margin-top: -10px;
     margin-left: -2px;
+}
+
+.la-line-spin-clockwise-fade.la-3x {
+    width: 96px;
+    height: 96px;
+}
+
+.la-line-spin-clockwise-fade.la-3x > div {
+    width: 6px;
+    height: 30px;
+    margin-top: -15px;
+    margin-left: -3px;
 }
 
 /*

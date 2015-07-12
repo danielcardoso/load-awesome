@@ -1,45 +1,44 @@
 /*!
- * Load Awesome v1.0.1 (http://github.danielcardoso.net/load-awesome/)
+ * Load Awesome v1.1.0 (http://github.danielcardoso.net/load-awesome/)
  * Copyright 2015 Daniel Cardoso <@DanielCardoso>
  * Licensed under MIT
  */
-.la-ball-climbing-dot {
-    position: relative;
-}
+.la-ball-climbing-dot,
 .la-ball-climbing-dot > div {
     position: relative;
-    -webkit-box-sizing: content-box;
-       -moz-box-sizing: content-box;
-            box-sizing: content-box;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.la-ball-climbing-dot {
+    display: block;
+    font-size: 0;
     color: #fff;
-    background: #fff;
-    border-color: #fff;
-    border-style: solid;
-    border-width: 0;
 }
-.la-ball-climbing-dot:after {
-    display: table;
-    line-height: 0;
-    clear: both;
-    content: "";
+
+.la-ball-climbing-dot.la-dark {
+    color: #333;
 }
-.la-ball-climbing-dot.la-dark > div {
-    color: #444;
-    background: #444;
-    border-color: #444;
+
+.la-ball-climbing-dot > div {
+    display: inline-block;
+    float: none;
+    background-color: currentColor;
+    border: 0 solid currentColor;
 }
 
 .la-ball-climbing-dot {
     width: 42px;
     height: 32px;
 }
+
 .la-ball-climbing-dot > div:nth-child(1) {
     position: absolute;
     bottom: 32%;
     left: 18%;
     width: 14px;
     height: 14px;
-    float: left;
     border-radius: 100%;
     -webkit-transform-origin: center bottom;
        -moz-transform-origin: center bottom;
@@ -51,13 +50,13 @@
          -o-animation: ball-climbing-dot-jump .6s ease-in-out infinite;
             animation: ball-climbing-dot-jump .6s ease-in-out infinite;
 }
+
 .la-ball-climbing-dot > div:not(:nth-child(1)) {
     position: absolute;
     top: 0;
     right: 0;
     width: 14px;
     height: 2px;
-    float: left;
     border-radius: 0;
     -webkit-transform: translate(60%, 0);
        -moz-transform: translate(60%, 0);
@@ -69,59 +68,71 @@
          -o-animation: ball-climbing-dot-steps 1.8s linear infinite;
             animation: ball-climbing-dot-steps 1.8s linear infinite;
 }
+
 .la-ball-climbing-dot > div:not(:nth-child(1)):nth-child(2) {
     -webkit-animation-delay: 0ms;
        -moz-animation-delay: 0ms;
          -o-animation-delay: 0ms;
             animation-delay: 0ms;
 }
+
 .la-ball-climbing-dot > div:not(:nth-child(1)):nth-child(3) {
     -webkit-animation-delay: -600ms;
        -moz-animation-delay: -600ms;
          -o-animation-delay: -600ms;
             animation-delay: -600ms;
 }
+
 .la-ball-climbing-dot > div:not(:nth-child(1)):nth-child(4) {
     -webkit-animation-delay: -1200ms;
        -moz-animation-delay: -1200ms;
          -o-animation-delay: -1200ms;
             animation-delay: -1200ms;
 }
+
 .la-ball-climbing-dot.la-sm {
-    width: 21px;
+    width: 20px;
     height: 16px;
 }
+
 .la-ball-climbing-dot.la-sm > div:nth-child(1) {
-    width: 7px;
-    height: 7px;
+    width: 6px;
+    height: 6px;
 }
+
 .la-ball-climbing-dot.la-sm > div:not(:nth-child(1)) {
-    width: 7px;
+    width: 6px;
     height: 1px;
 }
-.la-ball-climbing-dot.la-lg {
-    width: 63px;
-    height: 48px;
-}
-.la-ball-climbing-dot.la-lg > div:nth-child(1) {
-    width: 21px;
-    height: 21px;
-}
-.la-ball-climbing-dot.la-lg > div:not(:nth-child(1)) {
-    width: 21px;
-    height: 3px;
-}
+
 .la-ball-climbing-dot.la-2x {
     width: 84px;
     height: 64px;
 }
+
 .la-ball-climbing-dot.la-2x > div:nth-child(1) {
     width: 28px;
     height: 28px;
 }
+
 .la-ball-climbing-dot.la-2x > div:not(:nth-child(1)) {
     width: 28px;
     height: 4px;
+}
+
+.la-ball-climbing-dot.la-3x {
+    width: 126px;
+    height: 96px;
+}
+
+.la-ball-climbing-dot.la-3x > div:nth-child(1) {
+    width: 42px;
+    height: 42px;
+}
+
+.la-ball-climbing-dot.la-3x > div:not(:nth-child(1)) {
+    width: 42px;
+    height: 6px;
 }
 
 /*
@@ -273,6 +284,7 @@
                 transform: scale(1, .7);
     }
 }
+
 @-webkit-keyframes ball-climbing-dot-steps {
     0% {
         top: 0;
@@ -288,6 +300,7 @@
         opacity: 0;
     }
 }
+
 @-moz-keyframes ball-climbing-dot-steps {
     0% {
         top: 0;
@@ -303,6 +316,7 @@
         opacity: 0;
     }
 }
+
 @-o-keyframes ball-climbing-dot-steps {
     0% {
         top: 0;
@@ -318,6 +332,7 @@
         opacity: 0;
     }
 }
+
 @keyframes ball-climbing-dot-steps {
     0% {
         top: 0;

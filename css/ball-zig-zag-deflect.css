@@ -1,32 +1,31 @@
 /*!
- * Load Awesome v1.0.1 (http://github.danielcardoso.net/load-awesome/)
+ * Load Awesome v1.1.0 (http://github.danielcardoso.net/load-awesome/)
  * Copyright 2015 Daniel Cardoso <@DanielCardoso>
  * Licensed under MIT
  */
-.la-ball-zig-zag-deflect {
-    position: relative;
-}
+.la-ball-zig-zag-deflect,
 .la-ball-zig-zag-deflect > div {
     position: relative;
-    -webkit-box-sizing: content-box;
-       -moz-box-sizing: content-box;
-            box-sizing: content-box;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.la-ball-zig-zag-deflect {
+    display: block;
+    font-size: 0;
     color: #fff;
-    background: #fff;
-    border-color: #fff;
-    border-style: solid;
-    border-width: 0;
 }
-.la-ball-zig-zag-deflect:after {
-    display: table;
-    line-height: 0;
-    clear: both;
-    content: "";
+
+.la-ball-zig-zag-deflect.la-dark {
+    color: #333;
 }
-.la-ball-zig-zag-deflect.la-dark > div {
-    color: #444;
-    background: #444;
-    border-color: #444;
+
+.la-ball-zig-zag-deflect > div {
+    display: inline-block;
+    float: none;
+    background-color: currentColor;
+    border: 0 solid currentColor;
 }
 
 .la-ball-zig-zag-deflect {
@@ -34,6 +33,7 @@
     width: 32px;
     height: 32px;
 }
+
 .la-ball-zig-zag-deflect > div {
     position: absolute;
     top: 50%;
@@ -42,50 +42,57 @@
     height: 10px;
     margin-top: -5px;
     margin-left: -5px;
-    float: left;
     border-radius: 100%;
 }
+
 .la-ball-zig-zag-deflect > div:first-child {
     -webkit-animation: ball-zig-deflect 1.5s 0s infinite linear;
        -moz-animation: ball-zig-deflect 1.5s 0s infinite linear;
          -o-animation: ball-zig-deflect 1.5s 0s infinite linear;
             animation: ball-zig-deflect 1.5s 0s infinite linear;
 }
+
 .la-ball-zig-zag-deflect > div:last-child {
     -webkit-animation: ball-zag-deflect 1.5s 0s infinite linear;
        -moz-animation: ball-zag-deflect 1.5s 0s infinite linear;
          -o-animation: ball-zag-deflect 1.5s 0s infinite linear;
             animation: ball-zag-deflect 1.5s 0s infinite linear;
 }
+
 .la-ball-zig-zag-deflect.la-sm {
     width: 16px;
     height: 16px;
 }
+
 .la-ball-zig-zag-deflect.la-sm > div {
-    width: 5px;
-    height: 5px;
-    margin-top: -3px;
-    margin-left: -3px;
+    width: 4px;
+    height: 4px;
+    margin-top: -2px;
+    margin-left: -2px;
 }
-.la-ball-zig-zag-deflect.la-lg {
-    width: 48px;
-    height: 48px;
-}
-.la-ball-zig-zag-deflect.la-lg > div {
-    width: 15px;
-    height: 15px;
-    margin-top: -8px;
-    margin-left: -8px;
-}
+
 .la-ball-zig-zag-deflect.la-2x {
     width: 64px;
     height: 64px;
 }
+
 .la-ball-zig-zag-deflect.la-2x > div {
     width: 20px;
     height: 20px;
     margin-top: -10px;
     margin-left: -10px;
+}
+
+.la-ball-zig-zag-deflect.la-3x {
+    width: 96px;
+    height: 96px;
+}
+
+.la-ball-zig-zag-deflect.la-3x > div {
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    margin-left: -15px;
 }
 
 /*
@@ -207,6 +214,7 @@
                 transform: translate(0, 0);
     }
 }
+
 @-webkit-keyframes ball-zag-deflect {
     17% {
         -webkit-transform: translate(80%, 160%);
@@ -233,6 +241,7 @@
                 transform: translate(0, 0);
     }
 }
+
 @-moz-keyframes ball-zag-deflect {
     17% {
         -moz-transform: translate(80%, 160%);
@@ -259,6 +268,7 @@
              transform: translate(0, 0);
     }
 }
+
 @-o-keyframes ball-zag-deflect {
     17% {
         -o-transform: translate(80%, 160%);
@@ -285,6 +295,7 @@
            transform: translate(0, 0);
     }
 }
+
 @keyframes ball-zag-deflect {
     17% {
         -webkit-transform: translate(80%, 160%);

@@ -1,14 +1,33 @@
 Please view this file on the master branch, on stable branches it's out of date.
 
-v 1.0.1
-  Added:
+v 1.1.0  (Jul 12, 2015)
+  Improvements on documentation pages, several bug fixes on animations.
+  Added 3X version and removed Large version.
+
+  Added 7 animations:
+    - Ball Spin Clockwise Fade Rotating
+    - Ball Spin Fade Rotating
+    - Fire
+    - Line Spin Clockwise Fade Rotating
+    - Line Spin Fade Rotating
+    - Square Loader
+    - Timer
+
+
+v 1.0.1  (May 21, 2015)
+  Minor style adjustments on several animations and examples.
+
+  Added 4 animations:
     - Ball Spin
     - Ball Spin Clockwise
     - Ball Square Clockwise Spin
     - Ball Square Spin
 
-v 1.0.0
-  Added:
+
+v 1.0.0  (May 11, 2015)
+  First public release.
+
+  Added 42 animations:
     - Ball 8bits
     - Ball Atom
     - Ball Beat
@@ -50,4 +69,4 @@ v 1.0.0
     - Pacman
     - Square Jelly Box
     - Square Spin
-    - Triangle Skew Spin;
+    - Triangle Skew Spin

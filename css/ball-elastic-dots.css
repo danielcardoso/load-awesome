@@ -1,32 +1,31 @@
 /*!
- * Load Awesome v1.0.1 (http://github.danielcardoso.net/load-awesome/)
+ * Load Awesome v1.1.0 (http://github.danielcardoso.net/load-awesome/)
  * Copyright 2015 Daniel Cardoso <@DanielCardoso>
  * Licensed under MIT
  */
-.la-ball-elastic-dots {
-    position: relative;
-}
+.la-ball-elastic-dots,
 .la-ball-elastic-dots > div {
     position: relative;
-    -webkit-box-sizing: content-box;
-       -moz-box-sizing: content-box;
-            box-sizing: content-box;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.la-ball-elastic-dots {
+    display: block;
+    font-size: 0;
     color: #fff;
-    background: #fff;
-    border-color: #fff;
-    border-style: solid;
-    border-width: 0;
 }
-.la-ball-elastic-dots:after {
-    display: table;
-    line-height: 0;
-    clear: both;
-    content: "";
+
+.la-ball-elastic-dots.la-dark {
+    color: #333;
 }
-.la-ball-elastic-dots.la-dark > div {
-    color: #444;
-    background: #444;
-    border-color: #444;
+
+.la-ball-elastic-dots > div {
+    display: inline-block;
+    float: none;
+    background-color: currentColor;
+    border: 0 solid currentColor;
 }
 
 .la-ball-elastic-dots {
@@ -35,41 +34,47 @@
     font-size: 0;
     text-align: center;
 }
+
 .la-ball-elastic-dots > div {
     display: inline-block;
     width: 10px;
     height: 10px;
     white-space: nowrap;
-    float: none;
     border-radius: 100%;
     -webkit-animation: ball-elastic-dots-anim 1s infinite;
        -moz-animation: ball-elastic-dots-anim 1s infinite;
          -o-animation: ball-elastic-dots-anim 1s infinite;
             animation: ball-elastic-dots-anim 1s infinite;
 }
+
 .la-ball-elastic-dots.la-sm {
     width: 60px;
-    height: 5px;
+    height: 4px;
 }
+
 .la-ball-elastic-dots.la-sm > div {
-    width: 5px;
-    height: 5px;
+    width: 4px;
+    height: 4px;
 }
-.la-ball-elastic-dots.la-lg {
-    width: 180px;
-    height: 15px;
-}
-.la-ball-elastic-dots.la-lg > div {
-    width: 15px;
-    height: 15px;
-}
+
 .la-ball-elastic-dots.la-2x {
     width: 240px;
     height: 20px;
 }
+
 .la-ball-elastic-dots.la-2x > div {
     width: 20px;
     height: 20px;
+}
+
+.la-ball-elastic-dots.la-3x {
+    width: 360px;
+    height: 30px;
+}
+
+.la-ball-elastic-dots.la-3x > div {
+    width: 30px;
+    height: 30px;
 }
 
 /*

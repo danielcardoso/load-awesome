@@ -1,7 +1,9 @@
 # [Load Awesome](http://github.danielcardoso.net/load-awesome/)
 
-##### An awesome collection of — Pure CSS — Loaders and Spinners
+### An awesome collection of — Pure CSS — Loaders and Spinners
 
+A full suite of **53 animations** for websites,
+created and maintained by [Daniel Cardoso](http://www.danielcardoso.net).
 
 ![Bower version](https://img.shields.io/bower/v/load-awesome.svg?style=flat-square)
 ![Issues](https://img.shields.io/github/issues/danielcardoso/load-awesome.svg?style=flat-square)
@@ -12,6 +14,9 @@
 ## Table of contents
 - [Browser Support](#browser-support)
 - [Quick start](#quick-start)
+- [Usage](#usage)
+- [Customising](#customising)
+- [Versioning](#versioning)
 - [Creator](#creator)
 - [License](#license)
 
@@ -29,12 +34,54 @@ Several quick start options are available:
 - Install with [Bower](http://bower.io): `bower install load-awesome`
 
 
+## Usage
+#### Standard
+- Include specific css file (e.g. `ball-atom.css`)
+- Create an element and add the animation class (e.g. `<div class="la-ball-atom"></div>`)
+- Insert the appropriate number of childrens `<div>`s into the previous element
+
+
+## Customising
+#### Changing all colors
+Add styles to the main:
+``` css
+.la-ball-atom {
+    color: #79bbb5;
+}
+```
+
+
+
+#### Changing color of specific elements
+Add styles to the correct child `div` elements:
+``` css
+.la-ball-atom > div:nth-child(1) {
+    color: #f4696b;
+}
+.la-ball-atom > div:nth-child(2) {
+    color: #87c4a3;
+}
+.la-ball-atom > div:nth-child(3) {
+    color: #fec54f;
+}
+```
+
+
+## Versioning
+Load Awesome will be maintained under the Semantic Versioning guidelines.
+Releases will be numbered with the following format:
+
+`<major>.<minor>.<patch>`
+
+For more information on SemVer, please visit http://semver.org.
+
+
 ## Creator
-##### [Daniel Cardoso](http://www.danielcardoso.net)
+#### [Daniel Cardoso](http://www.danielcardoso.net)
 - [@Twitter](https://twitter.com/DanielCardoso)
 - [@GitHub](https://github.com/DanielCardoso)
 
 
 ## License
-##### The MIT License (MIT)
+#### The MIT License (MIT)
 Copyright (c) 2015 DanielCardoso.net

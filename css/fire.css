@@ -1,0 +1,170 @@
+/*!
+ * Load Awesome v1.1.0 (http://github.danielcardoso.net/load-awesome/)
+ * Copyright 2015 Daniel Cardoso <@DanielCardoso>
+ * Licensed under MIT
+ */
+.la-fire,
+.la-fire > div {
+    position: relative;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.la-fire {
+    display: block;
+    font-size: 0;
+    color: #fff;
+}
+
+.la-fire.la-dark {
+    color: #333;
+}
+
+.la-fire > div {
+    display: inline-block;
+    float: none;
+    background-color: currentColor;
+    border: 0 solid currentColor;
+}
+
+.la-fire {
+    width: 32px;
+    height: 32px;
+}
+
+.la-fire > div {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    border-radius: 0;
+    border-radius: 2px;
+    -webkit-transform: translateY(0) translateX(-50%) rotate(45deg) scale(0);
+       -moz-transform: translateY(0) translateX(-50%) rotate(45deg) scale(0);
+        -ms-transform: translateY(0) translateX(-50%) rotate(45deg) scale(0);
+         -o-transform: translateY(0) translateX(-50%) rotate(45deg) scale(0);
+            transform: translateY(0) translateX(-50%) rotate(45deg) scale(0);
+    -webkit-animation: fire-diamonds 1.5s infinite linear;
+       -moz-animation: fire-diamonds 1.5s infinite linear;
+         -o-animation: fire-diamonds 1.5s infinite linear;
+            animation: fire-diamonds 1.5s infinite linear;
+}
+
+.la-fire > div:nth-child(1) {
+    -webkit-animation-delay: -.85s;
+       -moz-animation-delay: -.85s;
+         -o-animation-delay: -.85s;
+            animation-delay: -.85s;
+}
+
+.la-fire > div:nth-child(2) {
+    -webkit-animation-delay: -1.85s;
+       -moz-animation-delay: -1.85s;
+         -o-animation-delay: -1.85s;
+            animation-delay: -1.85s;
+}
+
+.la-fire > div:nth-child(3) {
+    -webkit-animation-delay: -2.85s;
+       -moz-animation-delay: -2.85s;
+         -o-animation-delay: -2.85s;
+            animation-delay: -2.85s;
+}
+
+.la-fire.la-sm {
+    width: 16px;
+    height: 16px;
+}
+
+.la-fire.la-sm > div {
+    width: 6px;
+    height: 6px;
+}
+
+.la-fire.la-2x {
+    width: 64px;
+    height: 64px;
+}
+
+.la-fire.la-2x > div {
+    width: 24px;
+    height: 24px;
+}
+
+.la-fire.la-3x {
+    width: 96px;
+    height: 96px;
+}
+
+.la-fire.la-3x > div {
+    width: 36px;
+    height: 36px;
+}
+
+/*
+ * Animation
+ */
+@-webkit-keyframes fire-diamonds {
+    0% {
+        -webkit-transform: translateY(75%) translateX(-50%) rotate(45deg) scale(0);
+                transform: translateY(75%) translateX(-50%) rotate(45deg) scale(0);
+    }
+    50% {
+        -webkit-transform: translateY(-87.5%) translateX(-50%) rotate(45deg) scale(1);
+                transform: translateY(-87.5%) translateX(-50%) rotate(45deg) scale(1);
+    }
+    100% {
+        -webkit-transform: translateY(-212.5%) translateX(-50%) rotate(45deg) scale(0);
+                transform: translateY(-212.5%) translateX(-50%) rotate(45deg) scale(0);
+    }
+}
+@-moz-keyframes fire-diamonds {
+    0% {
+        -moz-transform: translateY(75%) translateX(-50%) rotate(45deg) scale(0);
+             transform: translateY(75%) translateX(-50%) rotate(45deg) scale(0);
+    }
+    50% {
+        -moz-transform: translateY(-87.5%) translateX(-50%) rotate(45deg) scale(1);
+             transform: translateY(-87.5%) translateX(-50%) rotate(45deg) scale(1);
+    }
+    100% {
+        -moz-transform: translateY(-212.5%) translateX(-50%) rotate(45deg) scale(0);
+             transform: translateY(-212.5%) translateX(-50%) rotate(45deg) scale(0);
+    }
+}
+@-o-keyframes fire-diamonds {
+    0% {
+        -o-transform: translateY(75%) translateX(-50%) rotate(45deg) scale(0);
+           transform: translateY(75%) translateX(-50%) rotate(45deg) scale(0);
+    }
+    50% {
+        -o-transform: translateY(-87.5%) translateX(-50%) rotate(45deg) scale(1);
+           transform: translateY(-87.5%) translateX(-50%) rotate(45deg) scale(1);
+    }
+    100% {
+        -o-transform: translateY(-212.5%) translateX(-50%) rotate(45deg) scale(0);
+           transform: translateY(-212.5%) translateX(-50%) rotate(45deg) scale(0);
+    }
+}
+@keyframes fire-diamonds {
+    0% {
+        -webkit-transform: translateY(75%) translateX(-50%) rotate(45deg) scale(0);
+           -moz-transform: translateY(75%) translateX(-50%) rotate(45deg) scale(0);
+             -o-transform: translateY(75%) translateX(-50%) rotate(45deg) scale(0);
+                transform: translateY(75%) translateX(-50%) rotate(45deg) scale(0);
+    }
+    50% {
+        -webkit-transform: translateY(-87.5%) translateX(-50%) rotate(45deg) scale(1);
+           -moz-transform: translateY(-87.5%) translateX(-50%) rotate(45deg) scale(1);
+             -o-transform: translateY(-87.5%) translateX(-50%) rotate(45deg) scale(1);
+                transform: translateY(-87.5%) translateX(-50%) rotate(45deg) scale(1);
+    }
+    100% {
+        -webkit-transform: translateY(-212.5%) translateX(-50%) rotate(45deg) scale(0);
+           -moz-transform: translateY(-212.5%) translateX(-50%) rotate(45deg) scale(0);
+             -o-transform: translateY(-212.5%) translateX(-50%) rotate(45deg) scale(0);
+                transform: translateY(-212.5%) translateX(-50%) rotate(45deg) scale(0);
+    }
+}

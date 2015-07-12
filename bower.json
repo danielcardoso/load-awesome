@@ -1,8 +1,8 @@
 {
     "name": "load-awesome",
     "description": "An awesome collection of — Pure CSS — Loaders and Spinners",
-    "version": "1.0.1",
-    "author": "Daniel Cardoso <@DanielCardoso>(http://www.danielcardoso.net)",
+    "version": "1.1.0",
+    "author": "Daniel Cardoso(http://www.danielcardoso.net)",
     "keywords": [
         "css",
         "pure",
@@ -15,12 +15,14 @@
     "homepage": "http://github.danielcardoso.net/load-awesome/",
     "license": "MIT",
     "main": [
-        "dist/examples/index.html"
+        "docs/index.html"
     ],
     "ignore": [
         "/.*",
+        "bower.json",
         "package.json",
         "CHANGELOG",
+        "LICENSE",
         "README.md"
     ]
 }

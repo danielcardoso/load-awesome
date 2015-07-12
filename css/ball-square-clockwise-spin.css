@@ -1,38 +1,38 @@
 /*!
- * Load Awesome v1.0.1 (http://github.danielcardoso.net/load-awesome/)
+ * Load Awesome v1.1.0 (http://github.danielcardoso.net/load-awesome/)
  * Copyright 2015 Daniel Cardoso <@DanielCardoso>
  * Licensed under MIT
  */
-.la-ball-square-clockwise-spin {
-    position: relative;
-}
+.la-ball-square-clockwise-spin,
 .la-ball-square-clockwise-spin > div {
     position: relative;
-    -webkit-box-sizing: content-box;
-       -moz-box-sizing: content-box;
-            box-sizing: content-box;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.la-ball-square-clockwise-spin {
+    display: block;
+    font-size: 0;
     color: #fff;
-    background: #fff;
-    border-color: #fff;
-    border-style: solid;
-    border-width: 0;
 }
-.la-ball-square-clockwise-spin:after {
-    display: table;
-    line-height: 0;
-    clear: both;
-    content: "";
+
+.la-ball-square-clockwise-spin.la-dark {
+    color: #333;
 }
-.la-ball-square-clockwise-spin.la-dark > div {
-    color: #444;
-    background: #444;
-    border-color: #444;
+
+.la-ball-square-clockwise-spin > div {
+    display: inline-block;
+    float: none;
+    background-color: currentColor;
+    border: 0 solid currentColor;
 }
 
 .la-ball-square-clockwise-spin {
     width: 26px;
     height: 26px;
 }
+
 .la-ball-square-clockwise-spin > div {
     position: absolute;
     top: 50%;
@@ -41,13 +41,13 @@
     height: 12px;
     margin-top: -6px;
     margin-left: -6px;
-    float: left;
     border-radius: 100%;
     -webkit-animation: ball-square-clockwise-spin 1s infinite ease-in-out;
        -moz-animation: ball-square-clockwise-spin 1s infinite ease-in-out;
          -o-animation: ball-square-clockwise-spin 1s infinite ease-in-out;
             animation: ball-square-clockwise-spin 1s infinite ease-in-out;
 }
+
 .la-ball-square-clockwise-spin > div:nth-child(1) {
     top: 0;
     left: 0;
@@ -56,6 +56,7 @@
          -o-animation-delay: -.875s;
             animation-delay: -.875s;
 }
+
 .la-ball-square-clockwise-spin > div:nth-child(2) {
     top: 0;
     left: 50%;
@@ -64,6 +65,7 @@
          -o-animation-delay: -.75s;
             animation-delay: -.75s;
 }
+
 .la-ball-square-clockwise-spin > div:nth-child(3) {
     top: 0;
     left: 100%;
@@ -72,6 +74,7 @@
          -o-animation-delay: -.625s;
             animation-delay: -.625s;
 }
+
 .la-ball-square-clockwise-spin > div:nth-child(4) {
     top: 50%;
     left: 100%;
@@ -80,6 +83,7 @@
          -o-animation-delay: -.5s;
             animation-delay: -.5s;
 }
+
 .la-ball-square-clockwise-spin > div:nth-child(5) {
     top: 100%;
     left: 100%;
@@ -88,6 +92,7 @@
          -o-animation-delay: -.375s;
             animation-delay: -.375s;
 }
+
 .la-ball-square-clockwise-spin > div:nth-child(6) {
     top: 100%;
     left: 50%;
@@ -96,6 +101,7 @@
          -o-animation-delay: -.25s;
             animation-delay: -.25s;
 }
+
 .la-ball-square-clockwise-spin > div:nth-child(7) {
     top: 100%;
     left: 0;
@@ -104,6 +110,7 @@
          -o-animation-delay: -.125s;
             animation-delay: -.125s;
 }
+
 .la-ball-square-clockwise-spin > div:nth-child(8) {
     top: 50%;
     left: 0;
@@ -112,35 +119,41 @@
          -o-animation-delay: 0s;
             animation-delay: 0s;
 }
+
 .la-ball-square-clockwise-spin.la-sm {
-    width: 13px;
-    height: 13px;
+    width: 12px;
+    height: 12px;
 }
+
 .la-ball-square-clockwise-spin.la-sm > div {
     width: 6px;
     height: 6px;
     margin-top: -3px;
     margin-left: -3px;
 }
-.la-ball-square-clockwise-spin.la-lg {
-    width: 39px;
-    height: 39px;
-}
-.la-ball-square-clockwise-spin.la-lg > div {
-    width: 18px;
-    height: 18px;
-    margin-top: -9px;
-    margin-left: -9px;
-}
+
 .la-ball-square-clockwise-spin.la-2x {
     width: 52px;
     height: 52px;
 }
+
 .la-ball-square-clockwise-spin.la-2x > div {
     width: 24px;
     height: 24px;
     margin-top: -12px;
     margin-left: -12px;
+}
+
+.la-ball-square-clockwise-spin.la-3x {
+    width: 78px;
+    height: 78px;
+}
+
+.la-ball-square-clockwise-spin.la-3x > div {
+    width: 36px;
+    height: 36px;
+    margin-top: -18px;
+    margin-left: -18px;
 }
 
 /*

@@ -1,132 +1,147 @@
 /*!
- * Load Awesome v1.0.1 (http://github.danielcardoso.net/load-awesome/)
+ * Load Awesome v1.1.0 (http://github.danielcardoso.net/load-awesome/)
  * Copyright 2015 Daniel Cardoso <@DanielCardoso>
  * Licensed under MIT
  */
-.la-line-scale-party {
-    position: relative;
-}
+.la-line-scale-party,
 .la-line-scale-party > div {
     position: relative;
-    -webkit-box-sizing: content-box;
-       -moz-box-sizing: content-box;
-            box-sizing: content-box;
-    color: #fff;
-    background: #fff;
-    border-color: #fff;
-    border-style: solid;
-    border-width: 0;
-}
-.la-line-scale-party:after {
-    display: table;
-    line-height: 0;
-    clear: both;
-    content: "";
-}
-.la-line-scale-party.la-dark > div {
-    color: #444;
-    background: #444;
-    border-color: #444;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .la-line-scale-party {
-    height: 32px;
+    display: block;
+    font-size: 0;
+    color: #fff;
 }
+
+.la-line-scale-party.la-dark {
+    color: #333;
+}
+
 .la-line-scale-party > div {
     display: inline-block;
+    float: none;
+    background-color: currentColor;
+    border: 0 solid currentColor;
+}
+
+.la-line-scale-party {
+    width: 40px;
+    height: 32px;
+}
+
+.la-line-scale-party > div {
     width: 4px;
     height: 32px;
     margin: 2px;
     margin-top: 0;
     margin-bottom: 0;
-    float: left;
     border-radius: 0;
     -webkit-animation-name: line-scale-party;
        -moz-animation-name: line-scale-party;
          -o-animation-name: line-scale-party;
             animation-name: line-scale-party;
-    -webkit-animation-delay: 0;
-       -moz-animation-delay: 0;
-         -o-animation-delay: 0;
-            animation-delay: 0;
     -webkit-animation-iteration-count: infinite;
        -moz-animation-iteration-count: infinite;
          -o-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
 }
+
 .la-line-scale-party > div:nth-child(1) {
     -webkit-animation-duration: .43s;
        -moz-animation-duration: .43s;
          -o-animation-duration: .43s;
             animation-duration: .43s;
-    -webkit-animation-delay: -.27s;
-       -moz-animation-delay: -.27s;
-         -o-animation-delay: -.27s;
-            animation-delay: -.27s;
+    -webkit-animation-delay: -.23s;
+       -moz-animation-delay: -.23s;
+         -o-animation-delay: -.23s;
+            animation-delay: -.23s;
 }
+
 .la-line-scale-party > div:nth-child(2) {
-    -webkit-animation-duration: .52s;
-       -moz-animation-duration: .52s;
-         -o-animation-duration: .52s;
-            animation-duration: .52s;
-    -webkit-animation-delay: -.25s;
-       -moz-animation-delay: -.25s;
-         -o-animation-delay: -.25s;
-            animation-delay: -.25s;
+    -webkit-animation-duration: .62s;
+       -moz-animation-duration: .62s;
+         -o-animation-duration: .62s;
+            animation-duration: .62s;
+    -webkit-animation-delay: -.32s;
+       -moz-animation-delay: -.32s;
+         -o-animation-delay: -.32s;
+            animation-delay: -.32s;
 }
+
 .la-line-scale-party > div:nth-child(3) {
-    -webkit-animation-duration: .72s;
-       -moz-animation-duration: .72s;
-         -o-animation-duration: .72s;
-            animation-duration: .72s;
-    -webkit-animation-delay: -.34s;
-       -moz-animation-delay: -.34s;
-         -o-animation-delay: -.34s;
-            animation-delay: -.34s;
+    -webkit-animation-duration: .43s;
+       -moz-animation-duration: .43s;
+         -o-animation-duration: .43s;
+            animation-duration: .43s;
+    -webkit-animation-delay: -.44s;
+       -moz-animation-delay: -.44s;
+         -o-animation-delay: -.44s;
+            animation-delay: -.44s;
 }
+
 .la-line-scale-party > div:nth-child(4) {
-    -webkit-animation-duration: .6s;
-       -moz-animation-duration: .6s;
-         -o-animation-duration: .6s;
-            animation-duration: .6s;
-    -webkit-animation-delay: -.57s;
-       -moz-animation-delay: -.57s;
-         -o-animation-delay: -.57s;
-            animation-delay: -.57s;
+    -webkit-animation-duration: .8s;
+       -moz-animation-duration: .8s;
+         -o-animation-duration: .8s;
+            animation-duration: .8s;
+    -webkit-animation-delay: -.31s;
+       -moz-animation-delay: -.31s;
+         -o-animation-delay: -.31s;
+            animation-delay: -.31s;
 }
+
 .la-line-scale-party > div:nth-child(5) {
-    -webkit-animation-duration: .72s;
-       -moz-animation-duration: .72s;
-         -o-animation-duration: .72s;
-            animation-duration: .72s;
-    -webkit-animation-delay: -.33s;
-       -moz-animation-delay: -.33s;
-         -o-animation-delay: -.33s;
-            animation-delay: -.33s;
+    -webkit-animation-duration: .74s;
+       -moz-animation-duration: .74s;
+         -o-animation-duration: .74s;
+            animation-duration: .74s;
+    -webkit-animation-delay: -.24s;
+       -moz-animation-delay: -.24s;
+         -o-animation-delay: -.24s;
+            animation-delay: -.24s;
 }
+
 .la-line-scale-party.la-sm {
+    width: 20px;
     height: 16px;
 }
+
 .la-line-scale-party.la-sm > div {
     width: 2px;
     height: 16px;
     margin: 1px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
-.la-line-scale-party.la-lg {
-    height: 48px;
-}
-.la-line-scale-party.la-lg > div {
-    width: 6px;
-    height: 48px;
-    margin: 3px;
-}
+
 .la-line-scale-party.la-2x {
+    width: 80px;
     height: 64px;
 }
+
 .la-line-scale-party.la-2x > div {
     width: 8px;
     height: 64px;
     margin: 4px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.la-line-scale-party.la-3x {
+    width: 120px;
+    height: 96px;
+}
+
+.la-line-scale-party.la-3x > div {
+    width: 12px;
+    height: 96px;
+    margin: 6px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /*

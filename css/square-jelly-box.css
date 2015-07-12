@@ -1,75 +1,81 @@
 /*!
- * Load Awesome v1.0.1 (http://github.danielcardoso.net/load-awesome/)
+ * Load Awesome v1.1.0 (http://github.danielcardoso.net/load-awesome/)
  * Copyright 2015 Daniel Cardoso <@DanielCardoso>
  * Licensed under MIT
  */
-.la-square-jelly-box {
-    position: relative;
-}
+.la-square-jelly-box,
 .la-square-jelly-box > div {
     position: relative;
-    -webkit-box-sizing: content-box;
-       -moz-box-sizing: content-box;
-            box-sizing: content-box;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.la-square-jelly-box {
+    display: block;
+    font-size: 0;
     color: #fff;
-    background: #fff;
-    border-color: #fff;
-    border-style: solid;
-    border-width: 0;
 }
-.la-square-jelly-box:after {
-    display: table;
-    line-height: 0;
-    clear: both;
-    content: "";
+
+.la-square-jelly-box.la-dark {
+    color: #333;
 }
-.la-square-jelly-box.la-dark > div {
-    color: #444;
-    background: #444;
-    border-color: #444;
+
+.la-square-jelly-box > div {
+    display: inline-block;
+    float: none;
+    background-color: currentColor;
+    border: 0 solid currentColor;
 }
 
 .la-square-jelly-box {
     width: 32px;
     height: 32px;
 }
-.la-square-jelly-box > div:nth-child(1) {
-    position: absolute;
-    top: -25%;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    border-radius: 10%;
-    -webkit-animation: square-jelly-box-animate .6s linear infinite;
-       -moz-animation: square-jelly-box-animate .6s linear infinite;
-         -o-animation: square-jelly-box-animate .6s linear infinite;
-            animation: square-jelly-box-animate .6s linear infinite;
-}
+
+.la-square-jelly-box > div:nth-child(1),
 .la-square-jelly-box > div:nth-child(2) {
     position: absolute;
-    bottom: -9%;
     left: 0;
     width: 100%;
-    height: 10%;
-    background: rgba(0, 0, 0, .2);
-    border-radius: 50%;
-    -webkit-animation: square-jelly-box-shadow .6s linear infinite;
-       -moz-animation: square-jelly-box-shadow .6s linear infinite;
-         -o-animation: square-jelly-box-shadow .6s linear infinite;
-            animation: square-jelly-box-shadow .6s linear infinite;
 }
+
+.la-square-jelly-box > div:nth-child(1) {
+    top: -25%;
+    z-index: 1;
+    height: 100%;
+    border-radius: 10%;
+    -webkit-animation: square-jelly-box-animate .6s -.1s linear infinite;
+       -moz-animation: square-jelly-box-animate .6s -.1s linear infinite;
+         -o-animation: square-jelly-box-animate .6s -.1s linear infinite;
+            animation: square-jelly-box-animate .6s -.1s linear infinite;
+}
+
+.la-square-jelly-box > div:nth-child(2) {
+    bottom: -9%;
+    height: 10%;
+    background: #000;
+    border-radius: 50%;
+    opacity: .2;
+    -webkit-animation: square-jelly-box-shadow .6s -.1s linear infinite;
+       -moz-animation: square-jelly-box-shadow .6s -.1s linear infinite;
+         -o-animation: square-jelly-box-shadow .6s -.1s linear infinite;
+            animation: square-jelly-box-shadow .6s -.1s linear infinite;
+}
+
 .la-square-jelly-box.la-sm {
     width: 16px;
     height: 16px;
 }
-.la-square-jelly-box.la-lg {
-    width: 48px;
-    height: 48px;
-}
+
 .la-square-jelly-box.la-2x {
     width: 64px;
     height: 64px;
+}
+
+.la-square-jelly-box.la-3x {
+    width: 96px;
+    height: 96px;
 }
 
 /*
@@ -171,24 +177,28 @@
                 transform: translateY(0) rotate(90deg);
     }
 }
+
 @-webkit-keyframes square-jelly-box-shadow {
     50% {
         -webkit-transform: scale(1.25, 1);
                 transform: scale(1.25, 1);
     }
 }
+
 @-moz-keyframes square-jelly-box-shadow {
     50% {
         -moz-transform: scale(1.25, 1);
              transform: scale(1.25, 1);
     }
 }
+
 @-o-keyframes square-jelly-box-shadow {
     50% {
         -o-transform: scale(1.25, 1);
            transform: scale(1.25, 1);
     }
 }
+
 @keyframes square-jelly-box-shadow {
     50% {
         -webkit-transform: scale(1.25, 1);

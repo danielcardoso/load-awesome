@@ -1,48 +1,48 @@
 /*!
- * Load Awesome v1.0.1 (http://github.danielcardoso.net/load-awesome/)
+ * Load Awesome v1.1.0 (http://github.danielcardoso.net/load-awesome/)
  * Copyright 2015 Daniel Cardoso <@DanielCardoso>
  * Licensed under MIT
  */
-.la-ball-rotate {
-    position: relative;
-}
+.la-ball-rotate,
 .la-ball-rotate > div {
     position: relative;
-    -webkit-box-sizing: content-box;
-       -moz-box-sizing: content-box;
-            box-sizing: content-box;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.la-ball-rotate {
+    display: block;
+    font-size: 0;
     color: #fff;
-    background: #fff;
-    border-color: #fff;
-    border-style: solid;
-    border-width: 0;
 }
-.la-ball-rotate:after {
-    display: table;
-    line-height: 0;
-    clear: both;
-    content: "";
+
+.la-ball-rotate.la-dark {
+    color: #333;
 }
-.la-ball-rotate.la-dark > div {
-    color: #444;
-    background: #444;
-    border-color: #444;
+
+.la-ball-rotate > div {
+    display: inline-block;
+    float: none;
+    background-color: currentColor;
+    border: 0 solid currentColor;
 }
 
 .la-ball-rotate {
     width: 10px;
     height: 10px;
 }
+
 .la-ball-rotate > div {
     width: 10px;
     height: 10px;
-    float: left;
     border-radius: 100%;
     -webkit-animation: ball-rotate-animation 1s cubic-bezier(.7, -.13, .22, .86) infinite;
        -moz-animation: ball-rotate-animation 1s cubic-bezier(.7, -.13, .22, .86) infinite;
          -o-animation: ball-rotate-animation 1s cubic-bezier(.7, -.13, .22, .86) infinite;
             animation: ball-rotate-animation 1s cubic-bezier(.7, -.13, .22, .86) infinite;
 }
+
 .la-ball-rotate > div:before,
 .la-ball-rotate > div:after {
     position: absolute;
@@ -50,41 +50,49 @@
     height: inherit;
     margin: inherit;
     content: "";
-    background: inherit;
+    background: currentColor;
     border-radius: inherit;
     opacity: .8;
 }
+
 .la-ball-rotate > div:before {
     top: 0;
     left: -150%;
 }
+
 .la-ball-rotate > div:after {
     top: 0;
     left: 150%;
 }
+
 .la-ball-rotate.la-sm {
-    width: 5px;
-    height: 5px;
+    width: 4px;
+    height: 4px;
 }
+
 .la-ball-rotate.la-sm > div {
-    width: 5px;
-    height: 5px;
+    width: 4px;
+    height: 4px;
 }
-.la-ball-rotate.la-lg {
-    width: 15px;
-    height: 15px;
-}
-.la-ball-rotate.la-lg > div {
-    width: 15px;
-    height: 15px;
-}
+
 .la-ball-rotate.la-2x {
     width: 20px;
     height: 20px;
 }
+
 .la-ball-rotate.la-2x > div {
     width: 20px;
     height: 20px;
+}
+
+.la-ball-rotate.la-3x {
+    width: 30px;
+    height: 30px;
+}
+
+.la-ball-rotate.la-3x > div {
+    width: 30px;
+    height: 30px;
 }
 
 /*
