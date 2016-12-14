@@ -11,6 +11,10 @@
             box-sizing: border-box;
 }
 
+.la-square-spin > div:not(:first-child) {
+	display: none;
+}
+
 .la-square-spin {
     display: block;
     font-size: 0;

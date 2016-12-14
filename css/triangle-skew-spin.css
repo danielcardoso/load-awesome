@@ -11,6 +11,10 @@
             box-sizing: border-box;
 }
 
+.la-triangle-skew-spin > div:not(:first-child) {
+	display: none;
+}
+
 .la-triangle-skew-spin {
     display: block;
     font-size: 0;

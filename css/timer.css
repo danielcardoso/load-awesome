@@ -11,6 +11,10 @@
             box-sizing: border-box;
 }
 
+.la-timer > div:not(:first-child) {
+	display: none;
+}
+
 .la-timer {
     display: block;
     font-size: 0;
