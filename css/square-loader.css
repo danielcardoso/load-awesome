@@ -11,6 +11,10 @@
             box-sizing: border-box;
 }
 
+.la-square-loader > div:not(:first-child) {
+	display: none;
+}
+
 .la-square-loader {
     display: block;
     font-size: 0;

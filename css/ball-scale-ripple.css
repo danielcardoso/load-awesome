@@ -11,6 +11,10 @@
             box-sizing: border-box;
 }
 
+.la-ball-scale-ripple > div:not(:first-child) {
+	display: none;
+}
+
 .la-ball-scale-ripple {
     display: block;
     font-size: 0;

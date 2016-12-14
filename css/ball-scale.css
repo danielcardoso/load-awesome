@@ -11,6 +11,10 @@
             box-sizing: border-box;
 }
 
+.la-ball-scale > div:not(:first-child) {
+	display: none;
+}
+
 .la-ball-scale {
     display: block;
     font-size: 0;
